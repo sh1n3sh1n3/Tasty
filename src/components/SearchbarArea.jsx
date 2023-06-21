@@ -1,12 +1,14 @@
-import { useState } from "react";
-
+import { useState, useContext } from "react";
+import { SearchTermAreaContext } from "../context/Context";
 import "./Search.css";
 
 const SearchbarArea = () => {
-  const [searchTerm, setSearchTerm] = useState("");
+  const { searchInputArea, setSearchInputArea } = useContext(
+    SearchTermAreaContext
+  );
   const inputVal = (e) => {
-    setSearchTerm(e.target.value);
-    console.log(searchTerm);
+    setSearchInputArea(e.target.value);
+    console.log(searchInputArea);
   };
   return (
     <>

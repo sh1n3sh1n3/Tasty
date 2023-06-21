@@ -12,9 +12,11 @@ const Home = () => {
       <h1>Home</h1>
       <Search />
       <RandomMeal />
+
       <Link to={`/search/areas`}>
         <AreasBtnSection />
       </Link>
+
       <Categories />
       <Nav />
     </>

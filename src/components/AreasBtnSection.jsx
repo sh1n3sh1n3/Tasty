@@ -18,23 +18,32 @@ const AreasBtnSection = (props) => {
       });
   }, []);
 
+  // # Speichern des Inputfeldes auf der AreaPage
+
   const filterByArea = (e) => {
     setFilteredArea(e.target.value);
   };
 
   return (
     <>
-      <section className="area-btn-container">
-        {areaNamesAll?.map((item, index) => (
-          <button
-            key={index}
-            onClick={filterByArea}
-            value={item.strArea}
-            className="active"
-          >
-            {item.strArea}
-          </button>
-        ))}
+      <section className="area-btn-wrapper">
+        <div className="title-wrapper">
+          <h2 className="area-title">Areas</h2>
+          <h2 className="area-see-all">See All</h2>
+        </div>
+
+        <section className="area-btn-container">
+          {areaNamesAll?.map((item, index) => (
+            <button
+              key={index}
+              onClick={filterByArea}
+              value={item.strArea}
+              className={filteredArea === item.strArea ? "active" : ""}
+            >
+              {item.strArea}
+            </button>
+          ))}
+        </section>
       </section>
     </>
   );
