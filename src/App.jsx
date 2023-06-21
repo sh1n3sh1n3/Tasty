@@ -7,6 +7,7 @@ import SearchAreas from './pages/SearchAreas'
 import SearchCategory from './pages/SearchCategory'
 import Details from './pages/Details'
 
+
 function App() {
 
   return (

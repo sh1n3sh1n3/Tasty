@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+.RandomMealSection{
+    padding: 10px;
+    width: 85%;
+    border-radius: 4%;
+    margin: 0 auto;
+    background-image: url("../images/CardRandomMeal.png");
+    background-position: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    background-size: cover;
+}
+
+.RandomDishTitle{
+    font-family: 'Montserrat';
+    font-size: 1.3rem;
+    margin: 2% 0 -7% 3%;
+    color: white;
+}
+
+.RandomMealBox{
+    padding: 2%;
+}
+
+.RandomDishImg{
+    display: -webkit-box;
+    margin-left: auto;
+    width: 30%;
+    border-radius: 10%;
+    margin-right: 3%;
+}
+
+.RandomDishName{
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    margin: -5% 0 -1.5% 0;
+    color: white;
+    width: 50%;
+}
+
+.RandomDishCatAr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:last baseline;
+}
+
+.RandomDishCatPoint{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: sticky;
+}
+
+.Ellipse{
+    margin-top: 16%;
+}
+
+.RandomDishCat{
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    margin-left: 6%;
+    color: rgba(255, 255, 255, 0.555);
+}
+
+.RandomDishAr{
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    margin-right: 6%;
+    color: rgba(255, 255, 255, 0.555);
+    align-self: baseline;
+}
