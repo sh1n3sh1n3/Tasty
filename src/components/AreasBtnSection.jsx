@@ -3,7 +3,7 @@ import './AreasBtnSection.css'
 const AreasBtnSection = () => {
     return ( 
         <>
-        <h1>AreasBtnSection</h1>
+        <h1>AreasBtnSection,</h1>
         </>
      );
 }
