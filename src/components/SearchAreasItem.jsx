@@ -8,7 +8,7 @@ const SearchAreasItem = (props) => {
     fetch([filteredMeals])
       .then((res) => res.json())
       .then((data) => setmealDetailData(data))
-      .catch((err) => console.log(`Fehler: ${err}`));
+      .catch((error) => console.log("Fehler: ", error));
   }, [filteredMeals]);
 
   return (
