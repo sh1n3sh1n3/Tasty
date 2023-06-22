@@ -6,12 +6,15 @@ import SearchInput from './pages/SearchInput'
 import SearchAreas from './pages/SearchAreas'
 import SearchCategory from './pages/SearchCategory'
 import Details from './pages/Details'
-
+import React, { useState } from "react";
+import { ThemeContext } from './context/Context'
 
 function App() {
+  const [theme, setTheme] = useState(false);
 
   return (
-    <>
+    <section className={theme ? "dark" : ""}>
+       <ThemeContext.Provider value={{ theme, setTheme }}>
     <BrowserRouter>
     <Routes>
       <Route path='/' element={<Onboarding/>}/>
@@ -22,8 +25,8 @@ function App() {
       <Route path='/detail/:id' element={<Details/>}/>
     </Routes>
     </BrowserRouter>
-
-    </>
+    </ThemeContext.Provider>
+    </section>
   )
 }
 

@@ -1,0 +1,18 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(../src/fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+.dark {
+  background-color: #97a2b0;
+  color: #ffffff;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+.dark svg {
+  fill: #3ca0a7;
+}
+
+.dark svg:hover {
+  fill: #70b9be;
+}
