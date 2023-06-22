@@ -8,6 +8,7 @@ import SearchCategory from './pages/SearchCategory'
 import Details from './pages/Details'
 
 
+
 function App() {
 
   return (
