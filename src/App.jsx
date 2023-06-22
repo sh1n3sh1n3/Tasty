@@ -10,6 +10,8 @@ import LoadingSection from './components/LoadingSection'
 import { useEffect, useState } from 'react'
 import { CategoryFilterContext, SearchbarCategoryContext, FilteredAreaContext, SearchTermAreaContext, SearchTermAllProductsContext, } from './context/Context'
 
+
+
 function App() {
   const [loading, setLoading] = useState()
   const [categoryFilter, setCategoryFilter] = useState("Beef")
