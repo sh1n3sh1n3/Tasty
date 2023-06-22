@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+.RandomMealSection{
+    padding: 10px;
+    width: 85%;
+    border-radius: 3vh;
+    margin: 0 auto;
+    background-image: url("../images/CardRandomMeal.png");
+    background-position: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    background-size: cover;
+}
+.RandomDishTitle{
+    font-family: 'Montserrat';
+    font-size: 1.3rem;
+    margin: 2% 0 -7% 3%;
+    color: white;
+}
+.RandomMealBox{
+    padding: 2%;
+}
+.RandomDishImg{
+    display: -webkit-box;
+    margin-left: auto;
+    width: 30%;
+    border-radius: 3vh;
+    margin-right: 3%;
+}
+.RandomDishName{
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    margin: -5% 0 -1.5% 0;
+    color: white;
+    width: 50%;
+}
+.RandomDishCatAr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:last baseline;
+}
+
+.RandomDishCatPoint{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: sticky;
+}
+.RandomDishCat{
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    margin-left: 6%;
+    color: rgba(255, 255, 255, 0.555);
+}
+.RandomDishAr{
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    margin-right: 6%;
+    color: rgba(255, 255, 255, 0.555);
+    align-self: baseline;
+}
+
+@media only screen and (min-width: 567px){
+    .RandomMealSection{
+        width: 90%;
+    }
+    .RandomDishTitle{
+        font-size: clamp(2rem, 2.5vw, 3rem);
+    }
+    .RandomDishName{
+        font-size: clamp(1.6rem, 2.5vw, 2rem);
+    }
+    .RandomDishImg{
+        width: 30%;
+    }
+    .RandomDishCatAr{
+        padding-top: 2%;
+    }
+    .RandomDishCatAr p{
+        font-size: clamp(1.4rem, 2.3vw, 1.8rem);
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .RandomMealSection{
+        width: 90%;
+        padding: 1%;
+    }
+    .RandomDishTitle{
+        font-size: clamp(2.6rem, 2.5vw, 3.2rem);
+    }
+    .RandomDishName{
+        font-size: clamp(2rem, 2.5vw, 2.6rem);
+    }
+    .RandomDishImg{
+        width: 28%;
+        padding-top: 1%;
+    }
+    .RandomDishCatAr{
+        padding-top: 2%;
+    }
+    .RandomDishCatAr p{
+        font-size: clamp(1.6rem, 2.3vw, 2rem);
+    }
+}
