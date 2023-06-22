@@ -16,7 +16,7 @@ const Categories = () => {
 
     return ( 
         <section className='categories'>
-            <div>
+            <div className='search-box'>
                 <h4>Categories</h4>
                 <Link to='/search/category'>See All</Link>
             </div>
@@ -24,7 +24,7 @@ const Categories = () => {
             {categories ? (
                 categories.map((category, index) => {return (
                 <Link key={index} to='/search/category' >
-                    <article onClick={() => setCategoryFilter(category.strCategory)} key={index}>
+                    <article onClick={() => setCategoryFilter(category.strCategory)} key={index} className="category-card">
                     <img src={category.strCategoryThumb} alt={category.strCategory} />
                     <h5>{category.strCategory}</h5>
                     </article>
