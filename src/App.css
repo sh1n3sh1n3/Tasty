@@ -3,6 +3,12 @@
   src: url(../src/fonts/Montserrat-VariableFont_wght.ttf);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .dark {
   background-color: #97a2b0;
   color: #ffffff;
