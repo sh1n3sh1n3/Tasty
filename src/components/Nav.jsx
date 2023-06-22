@@ -7,7 +7,7 @@ import Heart from '../images/nav-icon/Heart.svg';
 import Profile from '../images/nav-icon/Profile.svg';
 import Darkmode from '../images/nav-icon/Darkmode';
 import { useContext } from "react";
-import { ThemeContext } from '../context/Context';
+import { ThemeContext  } from '../context/Context';
 
 const Nav = () => {
    const { theme, setTheme } = useContext(ThemeContext);
