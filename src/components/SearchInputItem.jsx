@@ -4,14 +4,6 @@ import { useState, useEffect } from "react";
 const SearchInputItem = (props) => {
   const searchedMeals = props.searchByNameData;
 
-  const [mealDetailData, setmealDetailData] = useState([]);
-  useEffect(() => {
-    fetch([searchedMeals])
-      .then((res) => res.json())
-      .then((data) => setmealDetailData(data))
-      .catch((error) => console.log("Fehler: ", error));
-  }, [mealDetailData]);
-
   return (
     <>
       {searchedMeals?.map((item, index) => (

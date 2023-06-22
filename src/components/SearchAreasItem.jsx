@@ -3,13 +3,6 @@ import { useEffect, useState } from "react";
 
 const SearchAreasItem = (props) => {
   const filteredMeals = props.areaitemData;
-  const [mealDetailData, setmealDetailData] = useState([]);
-  useEffect(() => {
-    fetch([filteredMeals])
-      .then((res) => res.json())
-      .then((data) => setmealDetailData(data))
-      .catch((error) => console.log("Fehler: ", error));
-  }, [filteredMeals]);
 
   return (
     <>
