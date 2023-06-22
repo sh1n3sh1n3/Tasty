@@ -1,0 +1,46 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100vw;
+  /* border-top: 1px solid rgba(28, 28, 28, 0.132); */
+  border-radius: 40px 40px 0 0;
+  padding: 20px 20px 20px 20px;
+  background-color: white;
+}
+
+.navBar img:hover {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+nav svg {
+  width: 30px;
+  fill: gray;
+  transition: 0.3s;
+  cursor: pointer;
+}
+nav svg:hover {
+  fill: rgb(65, 65, 65);
+}
+
+.block {
+  background-color: #3ca0a771;
+  width: 30vw;
+  height: 1vh;
+  border-radius: 5px;
+}
+
+.wrapper-block {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #ffffffff;
+}
+
+.wrapper-nav {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(28, 28, 28, 0.132);
+  border-radius: 40px 40px 0 0;
+}
