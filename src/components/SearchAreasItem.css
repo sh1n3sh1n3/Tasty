@@ -1,0 +1,9 @@
+.area-meal-item img {
+  width: 70%;
+}
+.area-meal-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

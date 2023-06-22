@@ -16,3 +16,7 @@
 .dark svg:hover {
   fill: #70b9be;
 }
+
+html {
+  font-family: "Montserrat";
+}

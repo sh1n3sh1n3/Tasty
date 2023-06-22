@@ -6,18 +6,37 @@ import SearchInput from './pages/SearchInput'
 import SearchAreas from './pages/SearchAreas'
 import SearchCategory from './pages/SearchCategory'
 import Details from './pages/Details'
-import React, { useState } from "react";
-import { ThemeContext } from './context/Context'
+import LoadingSection from './components/LoadingSection'
+import { useEffect, useState } from 'react'
+import { CategoryFilterContext, SearchbarCategoryContext, FilteredAreaContext, SearchTermAreaContext, SearchTermAllProductsContext, ThemeContext } from './context/Context'
 
 function App() {
   const [theme, setTheme] = useState(false);
+  const [loading, setLoading] = useState()
+  const [categoryFilter, setCategoryFilter] = useState("Beef")
+  const [searchInputCategory, setSearchInputCategory] = useState("")
+  const [filteredArea, setFilteredArea] = useState([]);
+  const [searchInputArea, setSearchInputArea] = useState("");
+  const [searchInputAllProducts, setsearchInputAllProducts] = useState("");
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false)
+    }, 4000)
+  }, [])
 
   return (
     <section className={theme ? "dark" : ""}>
-       <ThemeContext.Provider value={{ theme, setTheme }}>
+    <ThemeContext.Provider value={{ theme, setTheme }}>
+    <FilteredAreaContext.Provider value={{ filteredArea, setFilteredArea }}>
+    <SearchTermAreaContext.Provider value={{ searchInputArea, setSearchInputArea }}>
+    <SearchTermAllProductsContext.Provider value={{ searchInputAllProducts, setsearchInputAllProducts }}>
+    <SearchbarCategoryContext.Provider value={{ searchInputCategory, setSearchInputCategory }}>
+    <CategoryFilterContext.Provider value={{ categoryFilter, setCategoryFilter }}>
     <BrowserRouter>
     <Routes>
-      <Route path='/' element={<Onboarding/>}/>
+      <Route path='/' element={loading ? <LoadingSection /> : <Onboarding/>}/>
       <Route path='/home' element={<Home/>}/>
       <Route path='/search/input' element={<SearchInput/>}/>
       <Route path='/search/areas' element={<SearchAreas/>}/>
@@ -25,9 +44,14 @@ function App() {
       <Route path='/detail/:id' element={<Details/>}/>
     </Routes>
     </BrowserRouter>
+    </CategoryFilterContext.Provider>
+    </SearchbarCategoryContext.Provider>
+    </SearchTermAllProductsContext.Provider>
+    </SearchTermAreaContext.Provider>
+    </FilteredAreaContext.Provider>
     </ThemeContext.Provider>
     </section>
-  )
+  );
 }
 
-export default App
+export default App;
