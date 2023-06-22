@@ -2,6 +2,8 @@ import './Onboarding.css'
 import frontBg from "../images/onboard-frontimg.svg"
 import { NavLink } from 'react-router-dom'
 
+
+
 const Onboarding = () => {
     return ( 
         <section className='onboard-wrapper'>

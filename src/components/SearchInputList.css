@@ -1,0 +1,12 @@
+.search-item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.dot {
+  background-color: blue;
+  width: 4%;
+  height: 5%;
+  border-radius: 50%;
+  color: blue;
+}

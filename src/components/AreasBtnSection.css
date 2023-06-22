@@ -1,0 +1,12 @@
+.area-btn-container .active {
+  background-color: red;
+}
+.area-btn-container {
+  display: flex;
+  gap: 1rem;
+  overflow: scroll;
+}
+.title-wrapper {
+  display: flex;
+  justify-content: space-between;
+}

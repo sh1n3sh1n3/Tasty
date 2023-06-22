@@ -8,12 +8,16 @@ import SearchCategory from './pages/SearchCategory'
 import Details from './pages/Details'
 import LoadingSection from './components/LoadingSection'
 import { useEffect, useState } from 'react'
-import { CategoryFilterContext, SearchbarCategoryContext } from './context/Context'
+import { CategoryFilterContext, SearchbarCategoryContext, FilteredAreaContext, SearchTermAreaContext, SearchTermAllProductsContext, ThemeContext } from './context/Context'
 
 function App() {
+  const [theme, setTheme] = useState(false);
   const [loading, setLoading] = useState()
   const [categoryFilter, setCategoryFilter] = useState("Beef")
   const [searchInputCategory, setSearchInputCategory] = useState("")
+  const [filteredArea, setFilteredArea] = useState([]);
+  const [searchInputArea, setSearchInputArea] = useState("");
+  const [searchInputAllProducts, setsearchInputAllProducts] = useState("");
 
   useEffect(() => {
     setLoading(true);
@@ -23,7 +27,11 @@ function App() {
   }, [])
 
   return (
-    <>
+    <section className={theme ? "dark" : ""}>
+    <ThemeContext.Provider value={{ theme, setTheme }}>
+    <FilteredAreaContext.Provider value={{ filteredArea, setFilteredArea }}>
+    <SearchTermAreaContext.Provider value={{ searchInputArea, setSearchInputArea }}>
+    <SearchTermAllProductsContext.Provider value={{ searchInputAllProducts, setsearchInputAllProducts }}>
     <SearchbarCategoryContext.Provider value={{ searchInputCategory, setSearchInputCategory }}>
     <CategoryFilterContext.Provider value={{ categoryFilter, setCategoryFilter }}>
     <BrowserRouter>
@@ -38,8 +46,12 @@ function App() {
     </BrowserRouter>
     </CategoryFilterContext.Provider>
     </SearchbarCategoryContext.Provider>
-    </>
-  )
+    </SearchTermAllProductsContext.Provider>
+    </SearchTermAreaContext.Provider>
+    </FilteredAreaContext.Provider>
+    </ThemeContext.Provider>
+    </section>
+  );
 }
 
-export default App
+export default App;

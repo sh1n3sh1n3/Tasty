@@ -1,8 +1,12 @@
-.home-section{
-    min-height: 100vh;
-    background-color: #dedcdc;
+.home-section {
+  min-height: 100vh;
+  background-color: #dedcdc;
 }
 
-.home-wrapper{
-    margin: 0 5vw;
+.home-wrapper {
+  margin: 0 5vw;
+}
+
+a {
+  text-decoration: none;
 }
