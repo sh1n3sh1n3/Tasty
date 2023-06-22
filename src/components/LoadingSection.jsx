@@ -1,10 +1,16 @@
 import './LoadingSection.css'
+import logo from "../images/logo.svg"
+
 
 const LoadingSection = () => {
+
     return ( 
-        <>
-        <h1>Loading Section</h1>
-        </>
+        <section className='loader-section'>
+            <article className='logo-section'>
+            <div class="lds-heart"><div></div></div>
+            <img src={logo} alt="logo" />
+            </article>
+        </section>
      );
 }
  
