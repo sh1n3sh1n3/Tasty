@@ -8,13 +8,15 @@ import './Home.css'
 
 const Home = () => {
     return ( 
-        <>
-        <Search/>
-        <RandomMeal/>
-        <Link to={`/search/areas`}><AreasBtnSection /></Link>
-        <Categories/>
-        <Nav/>
-        </>
+        <section className='home-section'>
+            <article className='home-wrapper'>
+            <Search/>
+            <RandomMeal/>
+            <Link to={`/search/areas`}><AreasBtnSection /></Link>
+            <Categories/>
+            <Nav/>
+            </article>
+        </section>
      );
 }
  
