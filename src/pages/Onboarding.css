@@ -40,7 +40,7 @@
 
 .svg-box-onboard img:hover{
     -webkit-box-shadow: inset -1px 3px 8px 5px #98d3ed, 2px 5px 16px 0px #2c87ab, 5px 5px 15px 5px rgba(0,0,0,0); 
-box-shadow: inset -1px 3px 8px 5px #8ac6ee, 2px 5px 16px 0px #247699, 5px 5px 15px 5px rgba(0,0,0,0);
+    box-shadow: inset -1px 3px 8px 5px #8adaee, 2px 5px 16px 0px #247699, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 
 .flying-food{
