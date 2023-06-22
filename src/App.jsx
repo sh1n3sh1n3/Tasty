@@ -6,11 +6,14 @@ import SearchInput from './pages/SearchInput'
 import SearchAreas from './pages/SearchAreas'
 import SearchCategory from './pages/SearchCategory'
 import Details from './pages/Details'
-import { useEffect, useState } from 'react'
 import LoadingSection from './components/LoadingSection'
+import { useEffect, useState } from 'react'
+import { CategoryFilterContext, SearchbarCategoryContext } from './context/Context'
 
 function App() {
   const [loading, setLoading] = useState()
+  const [categoryFilter, setCategoryFilter] = useState("Beef")
+  const [searchInputCategory, setSearchInputCategory] = useState("")
 
   useEffect(() => {
     setLoading(true);
@@ -21,6 +24,8 @@ function App() {
 
   return (
     <>
+    <SearchbarCategoryContext.Provider value={{ searchInputCategory, setSearchInputCategory }}>
+    <CategoryFilterContext.Provider value={{ categoryFilter, setCategoryFilter }}>
     <BrowserRouter>
     <Routes>
       <Route path='/' element={loading ? <LoadingSection /> : <Onboarding/>}/>
@@ -31,6 +36,8 @@ function App() {
       <Route path='/detail/:id' element={<Details/>}/>
     </Routes>
     </BrowserRouter>
+    </CategoryFilterContext.Provider>
+    </SearchbarCategoryContext.Provider>
     </>
   )
 }
