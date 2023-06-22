@@ -1,0 +1,13 @@
+.search-meal-item img {
+  width: 30%;
+}
+.search-meal-item-text {
+  display: flex;
+  flex-direction: column;
+}
+.search-meal-item {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 1rem;
+}

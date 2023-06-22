@@ -1,18 +1,19 @@
-import BackBtn from '../components/BackBtn';
-import Nav from '../components/Nav';
-import Search from '../components/Search';
-import SearchInputList from '../components/SearchInputList';
-import './SearchInput.css'
+import BackBtn from "../components/BackBtn";
+import Nav from "../components/Nav";
+
+import SearchInputList from "../components/SearchInputList";
+import SearchbarSearchAll from "../components/SearchbarSearchAll";
+import "./SearchInput.css";
 
 const SearchInput = () => {
-    return ( 
-        <>
-        <BackBtn/>
-        <Search/>
-        <SearchInputList/>
-        <Nav/>
-        </>
-     );
-}
- 
+  return (
+    <>
+      <BackBtn />
+      <SearchbarSearchAll />
+      <SearchInputList />
+      <Nav />
+    </>
+  );
+};
+
 export default SearchInput;

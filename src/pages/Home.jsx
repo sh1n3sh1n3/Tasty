@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import AreasBtnSection from '../components/AreasBtnSection';
 import Categories from '../components/Categories';
 import Nav from '../components/Nav';
@@ -8,10 +9,9 @@ import './Home.css'
 const Home = () => {
     return ( 
         <>
-        <h1>Home</h1>
         <Search/>
         <RandomMeal/>
-        <AreasBtnSection/>
+        <Link to={`/search/areas`}><AreasBtnSection /></Link>
         <Categories/>
         <Nav/>
         </>
