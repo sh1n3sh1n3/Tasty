@@ -7,7 +7,7 @@ const LoadingSection = () => {
     return ( 
         <section className='loader-section'>
             <article className='logo-section'>
-            <div class="lds-heart"><div></div></div>
+            <div className="lds-heart"><div></div></div>
             <img src={logo} alt="logo" />
             </article>
         </section>
