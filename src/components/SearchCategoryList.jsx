@@ -33,7 +33,7 @@ const SearchCategoryList = () => {
         {categoryData ? (
             categoryData.map((meal, index) => {return <SearchCategoryItem meal={meal} key={index} />})
         ) : (
-            <p>loading data...</p>
+            <p>loading data..</p>
         )}
         </>
      );
