@@ -1,5 +1,6 @@
 import { useContext, useEffect, useRef } from "react";
 import { SearchTermAllProductsContext } from "../context/Context";
+import './SearchbarSearchAll.css'
 
 const SearchbarSearchAll = () => {
   const { searchInputAllProducts, setsearchInputAllProducts } = useContext(
@@ -22,14 +23,14 @@ const SearchbarSearchAll = () => {
   };
   return (
     <>
-      <section className="searchbar-allproducts-container">
+      <form className="searchbar-allproducts-container">
         <input
           ref={inputRef}
-          type="text"
+          type="search"
           placeholder="Search"
-          onChange={inputVal}
+          onChange={inputVal} className="searchbar-input"
         />
-      </section>
+      </form>
       <section className="area-buttons-container"></section>
     </>
   );

@@ -2,6 +2,19 @@
   font-family: Montserrat;
   src: url(../src/fonts/Montserrat-VariableFont_wght.ttf);
 }
+html {
+  font-family: "Montserrat";
+}
+
+:root{
+  --main-color: #70B9BE;
+  --font-color:#0A2533;
+  --page-bg-color: #F1F5F5;
+  --nav-icon-color:#97A2B0;
+  --p-tag-searchField-color:##97A2B0;
+  --toggle-bg-color:##CBD4DE;
+  --white-color:#FFFFFF;
+}
 
 .dark {
   background-color: #97a2b0;
@@ -17,6 +30,4 @@
   fill: #70b9be;
 }
 
-html {
-  font-family: "Montserrat";
-}
+

@@ -14,7 +14,7 @@ const SearchbarArea = () => {
     <>
       <section className="searchbar-area-container">
         <h1>SearchbarArea</h1>
-        <input type="text" placeholder="Search" onChange={inputVal} />
+        <input type="text" placeholder="Search" onChange={inputVal} className="searchBar"/>
       </section>
       <section className="area-buttons-container"></section>
     </>
