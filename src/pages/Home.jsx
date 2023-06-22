@@ -1,6 +1,6 @@
+import { Link } from "react-router-dom";
 import AreasBtnSection from '../components/AreasBtnSection';
 import Categories from '../components/Categories';
-import LoadingSection from '../components/LoadingSection';
 import Nav from '../components/Nav';
 import RandomMeal from '../components/RandomMeal';
 import Search from '../components/Search';
@@ -11,7 +11,7 @@ const Home = () => {
         <>
         <Search/>
         <RandomMeal/>
-        <AreasBtnSection/>
+        <Link to={`/search/areas`}><AreasBtnSection /></Link>
         <Categories/>
         <Nav/>
         </>
