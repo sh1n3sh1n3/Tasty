@@ -4,9 +4,9 @@
   gap: 1rem;
 }
 .dot {
-  background-color: blue;
+  background-color: var(--main-color);
   width: 4%;
   height: 5%;
   border-radius: 50%;
-  color: blue;
+  color: var(--main-color);
 }
