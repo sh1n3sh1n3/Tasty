@@ -11,7 +11,7 @@ const SearchAreasItem = (props) => {
           <div className="areaImageBox">
             <img src={props.meal.strMealThumb} alt={props.meal.strMeal} />
           </div>
-          <p className="meal-name">{shortMeal}</p>
+          <p className="meal-name-area">{shortMeal}</p>
       </article>
   );
 };
