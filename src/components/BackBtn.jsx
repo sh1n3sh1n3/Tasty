@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { FilteredAreaContext } from "../context/Context";
+import './BackBtn.css'
+import Arrow from '../images/BackBtn/Arrow.svg'
 
 const BackBtn = () => {
   const { setFilteredArea } = useContext(FilteredAreaContext);
@@ -13,7 +15,17 @@ const BackBtn = () => {
     navigate(-1);
   };
 
-  return <button onClick={goOneBack}>Back</button>;
+  return (
+  <div className="Btn-Wrapper">
+    <div className="backArrow"> 
+    <button onClick={goOneBack} className="BackBtn"><img src={Arrow} alt="Back" /></button>
+    </div>
+   <div className="search-headline">
+    <h2>Search</h2>
+   </div>
+  
+  </div>
+  );
 };
 
 export default BackBtn;

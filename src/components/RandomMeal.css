@@ -1,40 +1,37 @@
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../fonts/Montserrat-VariableFont_wght.ttf');
-}
 
 .RandomMealSection{
     padding: 10px;
-    width: 85%;
-    border-radius: 3vh;
+    width: 80%;
+    height: 15%;
+}
+.RandomDishTitle{
+    font-family: 'montserrat';
+    font-size: 1.3rem;
+    margin-bottom: 2%;
+    color: var(--font-btnBg-color);
+}
+.RandomMealBox{
+    padding: 2%;
+    border-radius: 2vh;
     margin: 0 auto;
-    background-image: url("../images/CardRandomMeal.png");
+    background-image: url("../images/CardBck.svg");
     background-position: no-repeat;
     background-position: center;
     overflow: hidden;
     background-size: cover;
 }
-.RandomDishTitle{
-    font-family: 'Montserrat';
-    font-size: 1.3rem;
-    margin: 2% 0 -7% 3%;
-    color: white;
-}
-.RandomMealBox{
-    padding: 2%;
-}
 .RandomDishImg{
     display: -webkit-box;
     margin-left: auto;
-    width: 30%;
+    width: 35%;
     border-radius: 3vh;
-    margin-right: 3%;
+    margin: 3% 3% 5% auto;
 }
 .RandomDishName{
-    font-family: 'Montserrat';
-    font-size: 1rem;
-    margin: -5% 0 -1.5% 0;
-    color: white;
+    font-family: 'montserrat';
+    font-size: 1.4rem;
+    margin: -17% 0% 6% 3%;
+    color: var(--white-color);
     width: 50%;
 }
 .RandomDishCatAr{
@@ -42,6 +39,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items:last baseline;
+    margin-bottom: 3%;
 }
 
 .RandomDishCatPoint{
@@ -49,15 +47,16 @@
     flex-direction: row;
     align-items: center;
     position: sticky;
+    margin-left: 3%;
 }
 .RandomDishCat{
-    font-family: 'Montserrat';
+    font-family: 'montserrat';
     font-size: 1rem;
     margin-left: 6%;
     color: rgba(255, 255, 255, 0.555);
 }
 .RandomDishAr{
-    font-family: 'Montserrat';
+    font-family: 'montserrat';
     font-size: 1rem;
     margin-right: 6%;
     color: rgba(255, 255, 255, 0.555);
@@ -73,9 +72,10 @@
     }
     .RandomDishName{
         font-size: clamp(1.6rem, 2.5vw, 2rem);
+        margin: -3% 0 0 3%;
     }
     .RandomDishImg{
-        width: 30%;
+        width: 28%;
     }
     .RandomDishCatAr{
         padding-top: 2%;
@@ -94,7 +94,8 @@
         font-size: clamp(2.6rem, 2.5vw, 3.2rem);
     }
     .RandomDishName{
-        font-size: clamp(2rem, 2.5vw, 2.6rem);
+        font-size: clamp(2.5rem, 2.5vw, 2.6rem);
+        margin: -7% 0% 0% 3%;
     }
     .RandomDishImg{
         width: 28%;

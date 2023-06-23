@@ -20,6 +20,26 @@
   --white-color:#FFFFFF;
 }
 
+html {
+  font-family: "Montserrat";
+}
+
+:root {
+  --main-color: #70b9be;
+  --font-color: #0a2533;
+  --page-bg-color: #f1f5f5;
+  --nav-icon-color: #97a2b0;
+  --p-tag-searchField-color: ##97a2b0;
+  --toggle-bg-color: ##cbd4de;
+  --white-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .dark {
   background-color: #97a2b0;
   color: #ffffff;
@@ -32,8 +52,4 @@
 
 .dark svg:hover {
   fill: #70b9be;
-}
-
-html {
-  font-family: "Montserrat";
 }
