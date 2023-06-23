@@ -1,0 +1,13 @@
+.searchbar-allproducts-container{
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+ }
+ 
+ .searchbar-input{
+     height: 7vh;
+     width: 70vw;
+     border-radius: 1rem;
+     border: 2px solid #cbd4dea5;
+     font-size: 2rem;
+ }

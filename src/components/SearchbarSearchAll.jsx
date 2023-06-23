@@ -22,14 +22,14 @@ const SearchbarSearchAll = () => {
   };
   return (
     <>
-      <section className="searchbar-allproducts-container">
+      <form className="searchbar-allproducts-container">
         <input
           ref={inputRef}
-          type="text"
+          type="search"
           placeholder="Search"
-          onChange={inputVal}
+          onChange={inputVal} className="searchbar-input"
         />
-      </section>
+      </form>
       <section className="area-buttons-container"></section>
     </>
   );
