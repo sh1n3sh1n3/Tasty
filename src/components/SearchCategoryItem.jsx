@@ -37,8 +37,10 @@ shortMeal = `${shortMeal}...`
 
     return ( 
         <article className='search-category-item'>
-            <img src={props.meal.strMealThumb} alt={props.meal.strMeal} />
-            <p>{shortMeal}</p>
+            <div className='categoryImageBox'>
+                <img src={props.meal.strMealThumb} alt={props.meal.strMeal} />
+            </div>
+            <p className='meal-name-category'>{shortMeal}</p>
 
             {/* <p style={mobile ? {display: "block"} : {display: "none"}}>{shortMeal}</p>
          

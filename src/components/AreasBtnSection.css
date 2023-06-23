@@ -10,7 +10,7 @@
   padding: 3% 8%;
   border: none;
   background-color: var(--page-bg-color);
-  color: var(--font-btnBg-color);
+  color: var(--font-color);
 }
 .area-title{
   color: var(--main-color);
