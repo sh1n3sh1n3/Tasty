@@ -6,12 +6,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
 .search-box a {
   text-decoration: none;
   color: var(--main-color);
   font-weight: bold;
+  font-size: 1.4rem;
 }
 
 .search-box h3 {
@@ -31,7 +33,8 @@
   gap: 1rem;
   overflow-y: hidden;
   overflow-x: scroll;
-  padding: 0.5rem 0 1.5rem 0rem;
+  padding: 5vw;
+  margin: -5vw;
 }
 
 .categories-wrapper a {
@@ -42,16 +45,29 @@
 
 .category-card {
   background-color: var(--white-color);
-  border-bottom-left-radius: 2rem;
-  border-top-right-radius: 2rem;
-  border-top-left-radius: 1rem;
+  border-radius: 2rem;
   padding: 1rem 1rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  height: 30vh;
+  width: 60vw;
+  display: flex;
+
+  flex-direction: column;
+  padding: 2.5rem;
+}
+
+.category-card h5 {
+  font-size: 1.6rem;
+  color: var(--font-btnBg-color);
 }
 
 .category-card img {
-  width: 11rem;
-  height: 8rem;
+  /* width: 20rem;
+  height: rem; */
+  width: 100%;
+  height: 80%;
   object-fit: contain;
+  margin-top: -2rem;
 }
 
 .category-card img:hover {
@@ -77,4 +93,19 @@
 .categories-wrapper::-webkit-scrollbar-thumb:hover {
   background-color: var(--main-color);
   border-radius: 3rem;
+} */
+
+/* BACKUP STYLING
+.category-card {
+  background-color: var(--white-color);
+  border-bottom-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 1rem;
+  padding: 1rem 1rem;
+}
+
+.category-card img {
+  width: 11rem;
+  height: 8rem;
+  object-fit: contain;
 } */
