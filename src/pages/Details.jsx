@@ -4,13 +4,16 @@ import Instructions from "../components/Instructions";
 import Nav from "../components/Nav";
 import Toggle from "../components/Toggle";
 import "./Details.css";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import { useParams } from "react-router-dom";
+import { ThemeDetailContext } from "../context/Context";
 
 const Details = () => {
   const params = useParams();
   const idDish = params.id;
   const [mealData, setMealData] = useState();
+  const { themeDetailPage, setThemeDetailPage } =
+    useContext(ThemeDetailContext);
 
   useEffect(() => {
     fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${idDish}`)
@@ -29,7 +32,11 @@ const Details = () => {
         style={{ backgroundImage: `url(${mealData?.strMealThumb})` }}
       >
         <BackBtn />
-        <section className="detail-section">
+        <section
+          className={
+            themeDetailPage ? "detail-section-dark" : "detail-section-light"
+          }
+        >
           <div className="swipe-line-container">
             <div className="swipe-line"></div>
           </div>

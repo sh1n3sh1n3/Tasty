@@ -7,8 +7,9 @@
 
   background-position: top;
 }
-.detail-section {
-  background-color: white;
+.detail-section-light {
+  background-color: #dedcdc;
+  color: #0a2533;
   width: 100%;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
@@ -20,6 +21,21 @@
   flex-direction: column;
   justify-content: flex-start;
 }
+.detail-section-dark {
+  background-color: #97a2b0;
+  color: #ffffff;
+  width: 100%;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .swipe-line {
   width: 9vh;
   height: 0.5vh;

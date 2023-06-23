@@ -15,6 +15,7 @@ html {
   --p-tag-searchField-color: ##97a2b0;
   --toggle-bg-color: ##cbd4de;
   --white-color: #ffffff;
+  --dark-theme-color: #97a2b0;
 }
 
 * {
@@ -26,6 +27,11 @@ html {
 .dark {
   background-color: #97a2b0;
   color: #ffffff;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+.light {
+  background-color: #dedcdc;
+  color: #0a2533;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
 }
 
