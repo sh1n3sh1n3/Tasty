@@ -10,7 +10,7 @@ const BackBtn = () => {
   const navigate = useNavigate();
   //   Funktion, die bei Onclick ausgelöst wird. Dabei wird der globale Context für Area zurückgesetzt, damit der User nicht die vorherige Area Filter aktiv hat
   const goOneBack = () => {
-    setFilteredArea("");
+    setFilteredArea("American");
     // Die Navigation geht immer um ein Schritt zurück
     navigate(-1);
   };

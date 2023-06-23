@@ -44,7 +44,11 @@ const SearchAreasList = () => {
   return (
     <>
       <section className="area-item-list">
-        <SearchAreasItem areaitemData={filteredData} />
+        {filteredData ? (
+          filteredData.map((meal, index) => {return <SearchAreasItem meal={meal} key={index} />})
+        ) : (
+          <p>loading data...</p>
+        )}
       </section>
     </>
   );

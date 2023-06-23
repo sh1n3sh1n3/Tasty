@@ -14,22 +14,25 @@
 }
 .area-title{
   color: var(--main-color);
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin: 1% 1% 0.5% 1%;
 }
 .area-see-all{
   color: var(--main-color);
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin: 1% 1% 0.5% 1%;
 }
-
-
 
 .area-btn-container {
   display: flex;
   gap: 0.5rem;
   overflow: scroll;
   margin-bottom: 4%;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.area-btn-container::-webkit-scrollbar{
+  display: none;
 }
 .title-wrapper {
   display: flex;
