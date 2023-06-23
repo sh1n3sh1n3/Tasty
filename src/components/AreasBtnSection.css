@@ -1,5 +1,5 @@
 .area-btn-wrapper {
-  margin: 0 2%;
+  margin: -7% 2%;
 }
 .area-btn-container .active {
   background-color: var(--main-color);
@@ -11,6 +11,8 @@
   border: none;
   background-color: var(--page-bg-color);
   color: var(--font-color);
+  font-family: "montserrat";
+  font-size: 1.6rem;
 }
 .area-title {
   color: var(--main-color);
@@ -19,7 +21,7 @@
 }
 .area-see-all {
   color: var(--main-color);
-  font-size: 1rem;
+  font-size: 1.4rem;
   margin: 1% 1% 0.5% 1%;
 }
 
@@ -29,7 +31,7 @@
   overflow-y: hidden;
   overflow-x: scroll;
   padding: 0 0 3rem 0;
-  margin-bottom: 4%;
+  margin-bottom: 10%;
   /* -ms-overflow-style: none;
   scrollbar-width: none; */
 }
