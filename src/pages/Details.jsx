@@ -1,19 +1,49 @@
-import Ingredients from '../components/Ingredients';
-import Instructions from '../components/Instructions';
-import Nav from '../components/Nav';
-import Toggle from '../components/Toggle';
-import './Details.css'
+import BackBtn from "../components/BackBtn";
+import Ingredients from "../components/Ingredients";
+import Instructions from "../components/Instructions";
+import Nav from "../components/Nav";
+import Toggle from "../components/Toggle";
+import "./Details.css";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
 const Details = () => {
-    return ( 
-        <>
-        <h1>Details</h1>
-        <Toggle/>
-        <Ingredients/>
-        <Instructions/>
-        <Nav/>
-        </>
-     );
-}
- 
+  const params = useParams();
+  const idDish = params.id;
+  const [mealData, setMealData] = useState();
+
+  useEffect(() => {
+    fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${idDish}`)
+      .then((res) => res.json())
+      .then((data) => {
+        setMealData(data.meals[0]);
+      })
+      .catch((error) => {
+        console.error("Fehler beim Fetch", error);
+      });
+  }, []);
+  return (
+    <>
+      <section
+        className="detail-site-container"
+        style={{ backgroundImage: `url(${mealData?.strMealThumb})` }}
+      >
+        <BackBtn />
+        <section className="detail-section">
+          <div className="swipe-line-container">
+            <div className="swipe-line"></div>
+          </div>
+
+          <h1 className="meal-title">{mealData?.strMeal}</h1>
+          <h2 className="meal-category-name">{mealData?.strCategory}</h2>
+          <h3 className="meal-area-name">{mealData?.strArea}</h3>
+          <Toggle />
+
+          <Nav />
+        </section>
+      </section>
+    </>
+  );
+};
+
 export default Details;
