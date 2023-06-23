@@ -14,8 +14,8 @@ const Home = () => {
             <RandomMeal/>
             <Link to={`/search/areas`}><AreasBtnSection /></Link>
             <Categories/>
-            <Nav/>
             </article>
+            <Nav/>
         </section>
      );
 }
