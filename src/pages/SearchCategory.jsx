@@ -7,13 +7,13 @@ import './SearchCategory.css'
 
 const SearchCategory = () => {
     return ( 
-        <>
+        <section className='search-category-page'>
         <BackBtn/>
         <SearchbarCategory/>
         <CategoryBtnSection/>
         <SearchCategoryList/>
         <Nav/>
-        </>
+        </section>
      );
 }
  
