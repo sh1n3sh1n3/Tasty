@@ -22,7 +22,7 @@ const RandomMeal = () => {
         <>
             <div className='RandomMealSection'>
                 {/* <Link to={`/details/${randomDish?.idMeal}`}> */}
-                    <h1 className='RandomDishTitle'>Meal of the Day</h1>
+                    <h3 className='RandomDishTitle'>Meal of the Day</h3>
                         <div className='RandomMealBox'>
                             <article className='RandomMealTextBox'>
                                 <img className='RandomDishImg' src={randomDish?.strMealThumb} alt={randomDish?.strMeal} />
