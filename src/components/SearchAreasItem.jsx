@@ -8,7 +8,9 @@ const SearchAreasItem = (props) => {
     <>
       {filteredMeals?.map((item, index) => (
         <article className="area-meal-item" key={index} value={item.idMeal}>
-          <img src={item.strMealThumb} alt={item.strMeal} />
+          <div className="areaImageBox">
+            <img src={item.strMealThumb} alt={item.strMeal} />
+          </div>
           <p className="meal-name">{item.strMeal}</p>
         </article>
       ))}

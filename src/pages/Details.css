@@ -1,0 +1,33 @@
+.detail-site-container {
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-position: top;
+}
+.detail-section {
+  background-color: white;
+  width: 100%;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.swipe-line {
+  width: 9vh;
+  height: 0.5vh;
+  background-color: rgb(64, 63, 63);
+  border-radius: 2rem;
+}
+.swipe-line-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
