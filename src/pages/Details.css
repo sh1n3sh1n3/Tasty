@@ -1,10 +1,13 @@
+.detail-page {
+  padding: 0 0 12rem 0;
+}
+
 .detail-site-container {
   background-color: white;
   width: 100%;
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
-
   background-position: top;
 }
 .detail-section {

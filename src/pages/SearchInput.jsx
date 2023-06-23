@@ -7,12 +7,12 @@ import "./SearchInput.css";
 
 const SearchInput = () => {
   return (
-    <>
+    <section className="search-input-page">
       <BackBtn />
       <SearchbarSearchAll />
       <SearchInputList />
       <Nav />
-    </>
+    </section>
   );
 };
 

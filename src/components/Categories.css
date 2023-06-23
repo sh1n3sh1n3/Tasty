@@ -8,16 +8,16 @@
   justify-content: space-between;
 }
 
-.search-box h4 {
-  font-size: 2rem;
-  color: var(--font-btnBg-color);
-  padding: 0 1rem;
-}
-
 .search-box a {
   text-decoration: none;
   color: var(--main-color);
   font-weight: bold;
+}
+
+.search-box h4 {
+  font-size: 2rem;
+  color: var(--font-btnBg-color);
+  padding: 0 1rem;
 }
 
 .search-box a:hover {
@@ -42,7 +42,6 @@
 
 .category-card {
   background-color: var(--white-color);
-  color: #0a2533;
   border-bottom-left-radius: 2rem;
   border-top-right-radius: 2rem;
   border-top-left-radius: 1rem;

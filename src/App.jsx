@@ -15,7 +15,7 @@ function App() {
   const [loading, setLoading] = useState()
   const [categoryFilter, setCategoryFilter] = useState("Beef")
   const [searchInputCategory, setSearchInputCategory] = useState("")
-  const [filteredArea, setFilteredArea] = useState([]);
+  const [filteredArea, setFilteredArea] = useState("American");
   const [searchInputArea, setSearchInputArea] = useState("");
   const [searchInputAllProducts, setsearchInputAllProducts] = useState("");
 
