@@ -35,7 +35,7 @@ const SearchbarSearchAll = () => {
         />
         </div>
       </form>
-      <section className="area-buttons-container"></section>
+      <section className="area-buttons-container" ></section>
     </>
   );
 };
