@@ -1,6 +1,7 @@
-.home-section {
+.home-page {
   min-height: 100vh;
   background-color: #dedcdc;
+  padding: 0 0 12rem 0;
 }
 
 .home-wrapper {

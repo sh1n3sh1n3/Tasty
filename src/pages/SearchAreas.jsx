@@ -7,13 +7,13 @@ import "./SearchAreas.css";
 
 const SearchAreas = () => {
   return (
-    <>
+    <section className="search-areas-page">
       <BackBtn />
       <SearchbarArea />
       <AreasBtnSection />
       <SearchAreasList />
       <Nav />
-    </>
+    </section>
   );
 };
 
