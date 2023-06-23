@@ -5,12 +5,24 @@
 }
 
 .searchbar-input{
-    height: 7vh;
-    width: 70vw;
+    margin-left:1rem;
+    border: none;
+    font-size: 1.7rem;
+}
+
+.searchbar-wrapper{
     border-radius: 1rem;
     border: 2px solid #cbd4dea5;
-    font-size: 2rem;
-}
+    width: 70vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .searchbar-wrapper img{
+    padding: 1rem;
+  }
+
 
   
   
