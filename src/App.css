@@ -3,6 +3,20 @@
   src: url(../src/fonts/Montserrat-VariableFont_wght.ttf);
 }
 
+html {
+  font-family: "Montserrat";
+}
+
+:root {
+  --main-color: #70b9be;
+  --font-color: #0a2533;
+  --page-bg-color: #f1f5f5;
+  --nav-icon-color: #97a2b0;
+  --p-tag-searchField-color: ##97a2b0;
+  --toggle-bg-color: ##cbd4de;
+  --white-color: #ffffff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -21,18 +35,4 @@
 
 .dark svg:hover {
   fill: #70b9be;
-}
-
-html {
-  font-family: "Montserrat";
-}
-
-:root{
-  --main-color: #70B9BE;
-  --font-btnBg-color:#0A2533;
-  --page-bg-color: #F1F5F5;
-  --nav-icon-color:#97A2B0;
-  --p-tag-searchField-color: #97A2B0;
-  --toggle-bg-color: #CBD4DE;
-  --white-color:#FFFFFF;
 }
