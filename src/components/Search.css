@@ -1,0 +1,35 @@
+.search-homepage-container{
+    display: flex;
+    justify-content: center;
+}
+
+.searchbar-input {
+    margin-left: 1rem;
+    border: none;
+    font-size: 1.7rem;
+  }
+  
+  .searchbar-wrapper {
+    border-radius: 1rem;
+    border: 2px solid #cbd4dea5;
+    min-width: 90vw;
+    min-height: 7vh;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin:4rem 0 2rem 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  
+  .searchbar-wrapper img {
+    padding: 1rem;
+  }
+  .searchbar-input:focus {
+    outline: none;
+    border: none;
+  }
+  .searchbar-input textarea:focus {
+    outline: none;
+  }
+  
+ 

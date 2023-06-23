@@ -1,6 +1,6 @@
 import { useContext, useEffect, useRef } from "react";
 import { SearchTermAllProductsContext } from "../context/Context";
-import './SearchbarSearchAll.css'
+import './Search.css'
 import Search from '../images/nav-icon/Search.svg';
 
 const SearchbarSearchAll = () => {
@@ -24,7 +24,7 @@ const SearchbarSearchAll = () => {
   };
   return (
     <>
-      <form className="searchbar-allproducts-container">
+      <form className="search-homepage-container">
         <div className="searchbar-wrapper">
           <img src={Search} alt="search-icon" />
         <input
