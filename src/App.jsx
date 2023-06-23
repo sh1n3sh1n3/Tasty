@@ -19,6 +19,7 @@ import {
 } from "./context/Context";
 
 function App() {
+
   const [theme, setTheme] = useState(false);
   const [themeDetailPage, setThemeDetailPage] = useState(false);
   const [loading, setLoading] = useState();
