@@ -1,23 +1,23 @@
-.area-btn-wrapper{
+.area-btn-wrapper {
   margin: 0 2%;
 }
 .area-btn-container .active {
   background-color: var(--main-color);
   color: var(--white-color);
 }
-.area-btn-container button{
+.area-btn-container button {
   border-radius: 5vh;
   padding: 3% 8%;
   border: none;
   background-color: var(--page-bg-color);
-  color: var(--font-btnBg-color);
+  color: var(--font-color);
 }
-.area-title{
+.area-title {
   color: var(--main-color);
   font-size: 1rem;
   margin: 1% 1% 0.5% 1%;
 }
-.area-see-all{
+.area-see-all {
   color: var(--main-color);
   font-size: 1rem;
   margin: 1% 1% 0.5% 1%;
@@ -26,15 +26,19 @@
 .area-btn-container {
   display: flex;
   gap: 0.5rem;
-  overflow: scroll;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 0 0 3rem 0;
   margin-bottom: 4%;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  /* -ms-overflow-style: none;
+  scrollbar-width: none; */
 }
-.area-btn-container::-webkit-scrollbar{
+
+/* .area-btn-container::-webkit-scrollbar {
   display: none;
-}
-.title-wrapper {
-  display: flex;
-  justify-content: space-between;
+} */
+
+.area-see-all {
+  text-align: right;
+  margin: 0 0 1rem 0;
 }

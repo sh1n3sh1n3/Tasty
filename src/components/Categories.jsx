@@ -17,7 +17,7 @@ const Categories = () => {
     return ( 
         <section className='categories'>
             <div className='search-box'>
-                <h4>Categories</h4>
+                <h3>Categories</h3>
                 <Link to='/search/category'>See All</Link>
             </div>
             <figure className='categories-wrapper'>

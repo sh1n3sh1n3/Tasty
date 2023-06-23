@@ -14,8 +14,8 @@
   font-weight: bold;
 }
 
-.search-box h4 {
-  font-size: 2rem;
+.search-box h3 {
+  font-size: 2.5rem;
   color: var(--font-btnBg-color);
   padding: 0 1rem;
 }
@@ -31,7 +31,7 @@
   gap: 1rem;
   overflow-y: hidden;
   overflow-x: scroll;
-  padding: 0.5rem 0rem;
+  padding: 0.5rem 0 1.5rem 0rem;
 }
 
 .categories-wrapper a {
@@ -63,7 +63,7 @@
 
 /* Scroll Bar */
 
-.categories-wrapper::-webkit-scrollbar {
+/* .categories-wrapper::-webkit-scrollbar {
   background-color: var(--page-bg-color);
 }
 
@@ -77,4 +77,4 @@
 .categories-wrapper::-webkit-scrollbar-thumb:hover {
   background-color: var(--main-color);
   border-radius: 3rem;
-}
+} */
