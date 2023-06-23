@@ -1,20 +1,18 @@
 import "./SearchAreasItem.css";
-import { useEffect, useState } from "react";
 
 const SearchAreasItem = (props) => {
-  const filteredMeals = props.areaitemData;
+
+  let shortMeal = props.meal.strMeal
+  shortMeal = shortMeal.slice(0,9)
+  shortMeal = `${shortMeal}...`
 
   return (
-    <>
-      {filteredMeals?.map((item, index) => (
-        <article className="area-meal-item" key={index} value={item.idMeal}>
+      <article className="area-meal-item" value={props.meal.idMeal}>
           <div className="areaImageBox">
-            <img src={item.strMealThumb} alt={item.strMeal} />
+            <img src={props.meal.strMealThumb} alt={props.meal.strMeal} />
           </div>
-          <p className="meal-name">{item.strMeal}</p>
-        </article>
-      ))}
-    </>
+          <p className="meal-name-area">{shortMeal}</p>
+      </article>
   );
 };
 
