@@ -1,10 +1,30 @@
 @font-face {
-  font-family: "montserrat";
-  src: url("./fonts/Montserrat-VariableFont_wght.ttf");
+  font-family: Montserrat;
+  src: url(../src/fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dark {
+  background-color: #97a2b0;
+  color: #ffffff;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+.dark svg {
+  fill: #3ca0a7;
+}
+
+.dark svg:hover {
+  fill: #70b9be;
 }
 
 html {
-  font-family: "montserrat", Arial, Helvetica, sans-serif;
+  font-family: "Montserrat";
 }
 
 :root{
