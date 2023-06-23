@@ -1,10 +1,35 @@
-.area-btn-container .active {
-  background-color: red;
+.area-btn-wrapper{
+  margin: 0 2%;
 }
+.area-btn-container .active {
+  background-color: var(--main-color);
+  color: var(--white-color);
+}
+.area-btn-container button{
+  border-radius: 5vh;
+  padding: 3% 8%;
+  border: none;
+  background-color: var(--page-bg-color);
+  color: var(--font-btnBg-color);
+}
+.area-title{
+  color: var(--main-color);
+  font-size: 0.8rem;
+  margin: 1% 1% 0.5% 1%;
+}
+.area-see-all{
+  color: var(--main-color);
+  font-size: 0.8rem;
+  margin: 1% 1% 0.5% 1%;
+}
+
+
+
 .area-btn-container {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
   overflow: scroll;
+  margin-bottom: 4%;
 }
 .title-wrapper {
   display: flex;
