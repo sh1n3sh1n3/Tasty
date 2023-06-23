@@ -1,6 +1,7 @@
 .search-homepage-container {
   display: flex;
   justify-content: center;
+  margin-top: 8%;
 }
 
 .searchbar-input {
