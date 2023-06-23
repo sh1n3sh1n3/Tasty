@@ -8,9 +8,10 @@ import SearchCategory from './pages/SearchCategory'
 import Details from './pages/Details'
 import LoadingSection from './components/LoadingSection'
 import { useEffect, useState } from 'react'
-import { CategoryFilterContext, SearchbarCategoryContext, FilteredAreaContext, SearchTermAreaContext, SearchTermAllProductsContext, } from './context/Context'
+import { CategoryFilterContext, SearchbarCategoryContext, FilteredAreaContext, SearchTermAreaContext, SearchTermAllProductsContext, ThemeContext } from './context/Context'
 
 function App() {
+  const [theme, setTheme] = useState(false);
   const [loading, setLoading] = useState()
   const [categoryFilter, setCategoryFilter] = useState("Beef")
   const [searchInputCategory, setSearchInputCategory] = useState("")
@@ -26,7 +27,8 @@ function App() {
   }, [])
 
   return (
-    <>
+    <section className={theme ? "dark" : ""}>
+    <ThemeContext.Provider value={{ theme, setTheme }}>
     <FilteredAreaContext.Provider value={{ filteredArea, setFilteredArea }}>
     <SearchTermAreaContext.Provider value={{ searchInputArea, setSearchInputArea }}>
     <SearchTermAllProductsContext.Provider value={{ searchInputAllProducts, setsearchInputAllProducts }}>
@@ -47,7 +49,8 @@ function App() {
     </SearchTermAllProductsContext.Provider>
     </SearchTermAreaContext.Provider>
     </FilteredAreaContext.Provider>
-    </>
+    </ThemeContext.Provider>
+    </section>
   );
 }
 
