@@ -40,7 +40,7 @@ function App() {
       <ThemeDetailContext.Provider
         value={{ themeDetailPage, setThemeDetailPage }}
       >
-        <ThemeContext.Provider value={{ theme, setTheme }}>
+    <ThemeContext.Provider value={{ theme, setTheme }}>
           <FilteredAreaContext.Provider
             value={{ filteredArea, setFilteredArea }}
           >
@@ -56,8 +56,8 @@ function App() {
                   <CategoryFilterContext.Provider
                     value={{ categoryFilter, setCategoryFilter }}
                   >
-                    <BrowserRouter>
-                      <Routes>
+    <BrowserRouter>
+    <Routes>
                         <Route
                           path="/"
                           element={
@@ -73,14 +73,14 @@ function App() {
                         />
 
                         <Route path="/detail/:id" element={<Details />} />
-                      </Routes>
-                    </BrowserRouter>
-                  </CategoryFilterContext.Provider>
-                </SearchbarCategoryContext.Provider>
-              </SearchTermAllProductsContext.Provider>
-            </SearchTermAreaContext.Provider>
-          </FilteredAreaContext.Provider>
-        </ThemeContext.Provider>
+    </Routes>
+    </BrowserRouter>
+    </CategoryFilterContext.Provider>
+    </SearchbarCategoryContext.Provider>
+    </SearchTermAllProductsContext.Provider>
+    </SearchTermAreaContext.Provider>
+    </FilteredAreaContext.Provider>
+    </ThemeContext.Provider>
       </ThemeDetailContext.Provider>
     </section>
   );
