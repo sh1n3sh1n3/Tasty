@@ -26,7 +26,6 @@ const Details = () => {
       });
   }, []);
   return (
-    <section className="detail-page">
       <section
         className="detail-site-container"
         style={{ backgroundImage: `url(${mealData?.strMealThumb})` }}
@@ -49,7 +48,6 @@ const Details = () => {
           <Nav />
         </section>
       </section>
-    </section>
   );
 };
 

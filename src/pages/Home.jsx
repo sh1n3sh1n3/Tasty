@@ -12,6 +12,7 @@ const Home = () => {
             <article className='home-wrapper'>
             <Search/>
             <RandomMeal/>
+            <h3 className="area-title">Areas</h3>
             <Link to={`/search/areas`}><AreasBtnSection /></Link>
             <Categories/>
             </article>

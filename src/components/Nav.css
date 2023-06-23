@@ -7,11 +7,6 @@
   padding: 20px 20px 20px 20px;
 }
 
-.navBar img:hover {
-  width: 1.7rem;
-  height: 1.7rem;
-}
-
 nav svg {
   width: 24px;
   fill: rgb(156, 156, 156);
