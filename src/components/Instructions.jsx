@@ -29,7 +29,7 @@ const Instructions = () => {
 
   return (
     <>
-      <h1>Instructions</h1>
+      <h1 className="instructions">Instructions</h1>
       <section className="InstructionsContainer">{absatz}</section>
       <Link to={youTubeURL}>
         <button>Video</button>

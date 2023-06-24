@@ -47,3 +47,8 @@ a {
 .dark svg:hover {
   fill: #70b9be;
 }
+
+
+h1{
+  font-size: 1.75rem;
+}

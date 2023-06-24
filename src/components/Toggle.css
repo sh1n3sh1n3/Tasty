@@ -12,8 +12,25 @@
   border-radius: 1rem;
   border: none;
   transition: all ease-in 250ms;
+  font-size: clamp(1.6rem, 1.2073298429319372rem + 1.6753926701570678vw, 1.8rem);
 }
 .toggle-container .active {
   background-color: rgb(39, 31, 58);
   color: white;
 }
+
+
+@media only screen and (min-width: 567px) and (max-width: 991px){
+  .ingredient-toggle-btn,
+  .instructions-toggle-btn{
+    font-size: clamp(1.8rem, 1.5325471698113209rem + 0.7547169811320753vw, 2rem);
+  }
+}
+  
+@media only screen and (min-width: 992px) and (max-width: 1600px){
+  .ingredient-toggle-btn,
+  .instructions-toggle-btn{
+    font-size: clamp(2rem, -4.2000000000000055rem + 10.000000000000009vw, 2.2rem);
+  }
+}
+  

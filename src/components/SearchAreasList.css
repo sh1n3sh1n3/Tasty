@@ -1,4 +1,17 @@
 .area-item-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  margin-top: -1%;
+}
+
+@media only screen and (min-width: 567px) and (max-width: 991px){
+  .area-item-list{
+    grid-template-columns: repeat(4, 1fr);  
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1600px){
+  .area-item-list{
+    grid-template-columns: repeat(6, 1fr);  
+  }
 }

@@ -57,15 +57,16 @@
 }
 
 .content-onboard h1 {
-  font-size: 6vw;
+  font-size: 2.8rem; 
   color: var(--p-tag-searchField-color);
   margin-bottom: 1rem;
 }
 
 .content-onboard p {
   text-align: center;
-  font-size: 3vw;
-  padding: 0 25vw;
+  font-size: 1.8rem;
+/*   font-size: clamp(1.8rem, 1.4073298429319372rem + 1.6753926701570678vw, 2rem);
+ */  padding: 0 12vw;
   margin-bottom: 8vw;
   color: var(--nav-icon-color);
 }
@@ -75,7 +76,9 @@
   background-color: var(--font-color);
   padding: 3vw 30vw;
   border-radius: 15px;
-  font-size: 4vw;
+  font-size: 1.6rem;
+/*   font-size: clamp(1.6rem, 1.2073298429319372rem + 1.6753926701570678vw, 1.8rem);
+ */
   text-decoration: none;
   -webkit-box-shadow: 0px 10px 13px -7px #000000,
     5px 5px 15px 5px rgba(0, 0, 0, 0);
@@ -117,3 +120,25 @@
     font-size: 1.5rem;
   }
 }
+
+
+/* # Media Queries + Clamps hinzugefügt aber da Boris schon welche hatte und es responsiv war würde ich vielleicht Boris Version lassen*/
+
+/* @media only screen and (min-width: 567px) and (max-width: 991px){
+  .content-onboard p{
+    font-size: clamp(2rem, -4.2000000000000055rem + 10.000000000000009vw, 2.2rem);
+  }
+  .content-onboard a{
+    font-size: clamp(1.8rem, 1.5325471698113209rem + 0.7547169811320753vw, 2rem);
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1600px){
+  .content-onboard p{
+    font-size: clamp(2.2rem, -3.999999999999992rem + 9.999999999999986vw, 2.4rem);
+  }
+  .content-onboard a{
+    font-size: clamp(2rem, -4.2000000000000055rem + 10.000000000000009vw, 2.2rem);
+  }
+}
+ */
