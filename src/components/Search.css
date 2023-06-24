@@ -11,13 +11,12 @@
 
 .searchbar-wrapper {
   border-radius: 1rem;
-  /* border: 2px solid #cbd4dea5; */
   min-width: 90vw;
   min-height: 7vh;
   display: flex;
   align-items: center;
   background-color: white;
-  margin: 4rem 0 2rem 2rem;
+  margin: 4rem 0 2rem 0;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 

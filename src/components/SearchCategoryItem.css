@@ -2,11 +2,11 @@
   max-width: 100%;
   border-radius: 1.5vh;
 }
-.categoryImageBox{
+.categoryImageBox {
   width: 100%;
-  display: flex; 
-  justify-content: space-around; 
-  align-items: center; 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .search-category-item {
   display: flex;
@@ -18,11 +18,18 @@
   margin: 7%;
   padding: 1rem;
 }
-.meal-name-category{
+.meal-name-category {
   font-size: 1.4rem;
   text-align: center;
   width: 100%;
-  margin-top: 20%;
-  margin-bottom: 6%; 
-  white-space: nowrap;
+  height: 4vh;
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (min-width: 567px) {
+  .meal-name-category {
+    height: 10vh;
+    padding: 0 1rem;
+  }
 }

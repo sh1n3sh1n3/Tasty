@@ -22,7 +22,14 @@
   font-size: 1.4rem;
   text-align: center;
   width: 100%;
-  margin-top: 20%;
-  margin-bottom: 6%;
-  white-space: nowrap;
+  height: 4vh;
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (min-width: 567px) {
+  .meal-name-area {
+    height: 10vh;
+    padding: 0 1rem;
+  }
 }

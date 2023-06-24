@@ -1,5 +1,5 @@
 .area-btn-wrapper {
-  margin: 0 2%;
+  margin: -2.3rem 2% 0 2%;
 }
 .area-btn-container .active {
   background-color: var(--main-color);
@@ -40,5 +40,5 @@
 
 .area-see-all {
   text-align: right;
-  margin: 0 0 1rem 0;
+  margin: 0 0 2rem 0;
 }
