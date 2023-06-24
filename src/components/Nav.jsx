@@ -7,7 +7,11 @@ import Heart from "../images/nav-icon/Heart.svg";
 import Profile from "../images/nav-icon/Profile.svg";
 import Darkmode from "../images/nav-icon/Darkmode";
 import { useContext } from "react";
-import { ThemeContext, ThemeDetailContext } from "../context/Context";
+import {
+  ThemeContext,
+  ThemeDetailContext,
+  NavBtnColorContext,
+} from "../context/Context";
 import HomeActive from "../images/nav-icon/HomeActive.svg";
 import SearchActive from "../images/nav-icon/SearchActive.svg";
 import HeartActive from "../images/nav-icon/HeartActive.svg";
@@ -17,7 +21,7 @@ const Nav = () => {
   const { theme, setTheme } = useContext(ThemeContext);
   const { themeDetailPage, setThemeDetailPage } =
     useContext(ThemeDetailContext);
-  const [btnClicked, setBtnClicked] = useState("home");
+  const { btnClicked, setBtnClicked } = useContext(NavBtnColorContext);
 
   const toggleTheme = () => {
     setTheme((darkMode) => !darkMode);
@@ -28,32 +32,28 @@ const Nav = () => {
     <section className="wrapper-nav">
       <nav className="navBar">
         <NavLink onClick={() => setBtnClicked("home")} to="/home">
-          {btnClicked == "home" ? (
-            <img src={HomeActive} alt="Home-Button" />
-          ) : (
-            <img src={Home} alt="Home-Button" />
-          )}
+          <img
+            src={btnClicked === "home" ? HomeActive : Home}
+            alt="Home-Button"
+          />
         </NavLink>
         <NavLink onClick={() => setBtnClicked("search")} to="/search/input">
-          {btnClicked == "search" ? (
-            <img src={SearchActive} alt="Search-Button" />
-          ) : (
-            <img src={Search} alt="Search-Button" />
-          )}
+          <img
+            src={btnClicked === "search" ? SearchActive : Search}
+            alt="Search-Button"
+          />
         </NavLink>
         <NavLink onClick={() => setBtnClicked("like")}>
-          {btnClicked == "like" ? (
-            <img src={HeartActive} alt="like-Button" />
-          ) : (
-            <img src={Heart} alt="like-Button" />
-          )}
+          <img
+            src={btnClicked === "like" ? HeartActive : Heart}
+            alt="like-Button"
+          />
         </NavLink>
         <NavLink onClick={() => setBtnClicked("profile")}>
-          {btnClicked == "profile" ? (
-            <img src={ProfileActive} alt="Profile-Button" />
-          ) : (
-            <img src={Profile} alt="Profile-Button" />
-          )}
+          <img
+            src={btnClicked === "profile" ? ProfileActive : Profile}
+            alt="Profile-Button"
+          />
         </NavLink>
 
         <div onClick={toggleTheme}>
