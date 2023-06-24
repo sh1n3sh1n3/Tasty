@@ -92,17 +92,17 @@
     font-size: clamp(2.6rem, 2.5vw, 3.2rem);
   }
   .RandomDishName {
-    font-size: clamp(2.5rem, 2.5vw, 2.6rem);
+    font-size: clamp(2.5rem, 2.5vw, 3.2rem);
     margin: -7% 0% 0% 3%;
   }
   .RandomDishImg {
-    width: 28%;
+    width: 23%;
     padding-top: 1%;
   }
   .RandomDishCatAr {
     padding-top: 2%;
   }
   .RandomDishCatAr p {
-    font-size: clamp(1.6rem, 2.3vw, 2rem);
+    font-size: clamp(1.6rem, 2.3vw, 2.4rem);
   }
 }

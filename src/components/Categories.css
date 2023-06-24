@@ -109,3 +109,41 @@
   height: 8rem;
   object-fit: contain;
 } */
+@media only screen and (min-width: 992px) {
+  .categories-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+  .category-card {
+    width: unset;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 40vh;
+  }
+  .category-card h5 {
+    font-size: clamp(2rem, 2.5vw, 2.5rem);
+    font-weight: bold;
+  }
+  .search-box a {
+    font-size: clamp(2rem, 2.5vw, 2.5rem);
+    padding-right: 3rem;
+  }
+  .search-box h3 {
+    font-size: clamp(2.5rem, 2.5vw, 3.2rem);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .search-box a {
+    padding-right: 1.5rem;
+  }
+  .category-card {
+    height: 50vh;
+    justify-content: space-evenly;
+  }
+  .category-card h5 {
+    font-size: clamp(1.6rem, 2.5vw, 2rem);
+    font-weight: bold;
+  }
+}

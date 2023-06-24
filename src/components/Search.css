@@ -33,3 +33,9 @@
 .searchbar-input textarea:focus {
   outline: none;
 }
+@media only screen and (min-width: 567px) {
+  .searchbar-input {
+    font-size: clamp(1.6rem, 2.3vw, 2rem);
+    width: 95%;
+  }
+}

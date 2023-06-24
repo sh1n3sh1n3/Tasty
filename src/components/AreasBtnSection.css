@@ -45,3 +45,27 @@
   text-align: right;
   margin: 0 0 1rem 0;
 }
+.area-title {
+  font-size: 2.5rem;
+  color: var(--font-color);
+}
+@media only screen and (min-width: 992px) {
+  .area-btn-wrapper {
+    margin: -1.5% 2%;
+  }
+  .area-title {
+    font-size: clamp(2.5rem, 2.5vw, 3.2rem);
+  }
+  .area-see-all {
+    font-size: clamp(2rem, 2.5vw, 2.5rem);
+    margin-top: -4rem;
+  }
+  .area-btn-container button {
+    font-size: clamp(2rem, 2.5vw, 2.5rem);
+    font-weight: bold;
+  }
+  .area-btn-container {
+    margin-top: 3rem;
+    padding: 0rem;
+  }
+}
