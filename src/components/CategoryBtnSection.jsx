@@ -1,6 +1,7 @@
 import { useState, useEffect, useContext } from 'react'
 import { CategoryFilterContext } from '../context/Context'
 import './CategoryBtnSection.css'
+import { Link } from 'react-router-dom'
 
 const CategoryBtnSection = () => {
     const [categories, setCategories] = useState([])
@@ -14,12 +15,15 @@ const CategoryBtnSection = () => {
     },[])
 
     return ( 
+        <section className='category-btn-wrapper'>
+        <Link className='category-see-all' to='/search/category'>See All</Link>
         <section className='category-btn-sec'>
             {categories ? (
                 categories.map((category, index) => {return <button className={categoryFilter == category.strCategory ? "active-btn" : "inactiveBtn"}  onClick={() => setCategoryFilter(category.strCategory)} key={index}>{category.strCategory}</button>})
-            ) : (
-                <p>loading data...</p>
-            )}
+                ) : (
+                    <p>loading data...</p>
+                    )}
+        </section>
         </section>
      );
 }

@@ -8,10 +8,12 @@
   justify-content: space-between;
 }
 
-.search-box a {
+.see-all {
   text-decoration: none;
   color: var(--main-color);
   font-weight: bold;
+  text-align: right;
+  display: block;
 }
 
 .search-box h3 {

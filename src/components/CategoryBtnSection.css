@@ -5,29 +5,34 @@
   padding: 3% 8%;
   border: none;
 }
-.inactiveBtn{
+.inactiveBtn {
   background-color: var(--page-bg-color);
   color: var(--font-btnBg-color);
   border-radius: 5vh;
   padding: 3% 8%;
   border: none;
 }
-.category-btn-sec{
+.category-btn-wrapper {
+  margin: 4% 0;
+}
+.category-btn-sec {
   display: flex;
   gap: 0.5rem;
   overflow: scroll;
-  margin: 4% 2%;
+
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-.category-btn-sec::-webkit-scrollbar{
+.category-btn-sec::-webkit-scrollbar {
   display: none;
 }
 
-/* 
-.area-see-all{
+.category-see-all {
   color: var(--main-color);
-  font-size: 0.8rem;
-  margin: 1% 1% 0.5% 1%;
+  font-size: 1rem;
+  /* margin: 1% 1% 0.5% 1%; */
+  margin: 0 0 2rem 0;
+  display: block;
+  text-align: right;
+  font-weight: bold;
 }
- */

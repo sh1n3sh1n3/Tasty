@@ -1,6 +1,6 @@
-.area-btn-wrapper {
+/* .area-btn-wrapper {
   margin: -2.3rem 2% 0 2%;
-}
+} */
 .area-btn-container .active {
   background-color: var(--main-color);
   color: var(--white-color);
@@ -20,7 +20,9 @@
 .area-see-all {
   color: var(--main-color);
   font-size: 1rem;
-  margin: 1% 1% 0.5% 1%;
+  /* margin: 1% 1% 0.5% 1%; */
+  margin: 0 0 2rem 0;
+  text-align: right;
 }
 
 .area-btn-container {
@@ -37,8 +39,3 @@
 /* .area-btn-container::-webkit-scrollbar {
   display: none;
 } */
-
-.area-see-all {
-  text-align: right;
-  margin: 0 0 2rem 0;
-}
