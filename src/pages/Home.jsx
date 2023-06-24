@@ -5,8 +5,16 @@ import Nav from '../components/Nav';
 import RandomMeal from '../components/RandomMeal';
 import Search from '../components/Search';
 import './Home.css'
+import { NavContext } from "../context/Context";
+import { useContext, useEffect } from "react";
 
 const Home = () => {
+    const {nav, setNav} = useContext(NavContext);
+
+    useEffect(() => {
+        setNav("home")
+    },[])
+
     return ( 
         <section className='home-page'>
             <article className='home-wrapper'>

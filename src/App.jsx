@@ -15,7 +15,7 @@ import {
   SearchTermAreaContext,
   SearchTermAllProductsContext,
   ThemeContext,
-  ThemeDetailContext,
+  ThemeDetailContext, NavContext
 } from "./context/Context";
 
 function App() {
@@ -28,6 +28,7 @@ function App() {
   const [filteredArea, setFilteredArea] = useState("American");
   const [searchInputArea, setSearchInputArea] = useState("");
   const [searchInputAllProducts, setsearchInputAllProducts] = useState("");
+  const [nav, setNav] = useState("home");
 
   useEffect(() => {
     setLoading(true);
@@ -38,6 +39,7 @@ function App() {
 
   return (
     <section className={theme ? "dark" : "light"}>
+      <NavContext.Provider value={{nav, setNav}}>
       <ThemeDetailContext.Provider
         value={{ themeDetailPage, setThemeDetailPage }}
       >
@@ -83,6 +85,7 @@ function App() {
     </FilteredAreaContext.Provider>
     </ThemeContext.Provider>
       </ThemeDetailContext.Provider>
+      </NavContext.Provider>
     </section>
   );
 }
