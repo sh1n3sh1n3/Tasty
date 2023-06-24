@@ -46,3 +46,27 @@
   justify-content: center;
   align-items: center;
 }
+.recipe-informations-print-off {
+  display: none;
+}
+.recipe-informations-print-on {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  z-index: -5;
+}
+.img-print-file {
+  object-fit: contain;
+
+  width: 40%;
+}
+.print-information-container {
+  display: flex;
+  gap: 3rem;
+}
+.ingredients-print-data {
+  width: 200%;
+}
