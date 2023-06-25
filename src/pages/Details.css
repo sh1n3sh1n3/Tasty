@@ -72,7 +72,8 @@
 } 
 
 
-  .detail-section-dark, .detail-section-light{
-  max-height: 60vh;
+ .detail-section-dark, .detail-section-light{
+  max-height: 80vh;
+  padding: 0 0 12rem 0;
   
- } 
+ }   
