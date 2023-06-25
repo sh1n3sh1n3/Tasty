@@ -1,12 +1,15 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import { useParams } from "react-router-dom";
 import "./Ingredients.css";
+import { ThemeDetailContext } from "../context/Context";
 
 const Ingredients = () => {
   const [ingredientsData, setIngredientsData] = useState([]);
   const [ingredientsItems, setIngredientsItems] = useState([]);
   const params = useParams();
   const idDish = params.id;
+  const { themeDetailPage, setThemeDetailPage } =
+    useContext(ThemeDetailContext);
 
   useEffect(() => {
     fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${idDish}`)
@@ -44,7 +47,8 @@ const Ingredients = () => {
   }, [ingredientsData]);
 
   return (
-    <div className="ingredients-wrapper">
+    <div className={
+      themeDetailPage ? "ingredients-wrapper-dark" : "ingredients-wrapper-light"}>
       <h3 className="ingredients">Ingredients</h3>
       <section className="ingredients-container">
         {ingredientsItems.map((elm, index) => (

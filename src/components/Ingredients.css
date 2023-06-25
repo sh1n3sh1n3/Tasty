@@ -4,6 +4,15 @@
   margin: 2rem;
 }
 
+.ingredients-wrapper-dark,
+.ingredients-wrapper-light {
+  padding: 0 0 12rem 0;
+}
+
+.ingredients-wrapper-dark {
+  background-color: var(--font-color);
+}
+
 .ingredients-name {
   font-size: clamp(1.8rem, 1.4073298429319372rem + 1.6753926701570678vw, 2rem);
   font-weight: 600;

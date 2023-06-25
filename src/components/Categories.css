@@ -62,11 +62,11 @@
   width: 60vw;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 2.5rem;
 }
 
 .category-card h5 {
-  font-size: 1.6rem;
   color: var(--font-btnBg-color);
 }
 

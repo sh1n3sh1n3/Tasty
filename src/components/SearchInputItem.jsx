@@ -8,8 +8,8 @@ const SearchInputItem = (props) => {
   return (
     <section className="search-meal-wrapper">
       {searchedMeals?.map((item, index) => (
-        <NavLink to={`/detail/${item.idMeal}`}>
-          <article className="search-meal-item" key={index} value={item.idMeal}>
+        <NavLink to={`/detail/${item.idMeal}`} key={index} >
+          <article className="search-meal-item" value={item.idMeal}>
           <img className="search-meal-img" src={item.strMealThumb} alt={item.strMeal} />
           <div className="search-meal-item-text">
             <h2 className="meal-name">{item.strMeal}</h2>
