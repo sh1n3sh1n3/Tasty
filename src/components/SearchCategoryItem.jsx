@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react'
-import './SearchCategoryItem.css'
-
+import { useEffect, useState } from "react";
+import "./SearchCategoryItem.css";
+import { NavLink } from "react-router-dom";
 const SearchCategoryItem = (props) => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 567)
 
@@ -18,6 +18,7 @@ const SearchCategoryItem = (props) => {
   const longMeal = props.meal.strMeal
 
   return (
+    <NavLink to={`/detail/${props.meal.idMeal}`}>
     <article className='search-category-item'>
       <div className='categoryImageBox'>
         <img src={props.meal.strMealThumb} alt={props.meal.strMeal} />
@@ -27,6 +28,7 @@ const SearchCategoryItem = (props) => {
         <p className='meal-name-category' style={!isMobile ? { display: 'flex' } : { display: 'none' }}>{longMeal}</p>
     </div>
     </article>
+    </NavLink>
   )
 }
 

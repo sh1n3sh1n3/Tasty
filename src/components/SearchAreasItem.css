@@ -13,13 +13,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 3vh;
+  border-radius: 2.5vh;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   margin: 7%;
-  padding: 1rem;
+  padding: 1vh;
 }
 .meal-name-area {
-  font-size: 1.4rem;
+  font-size: clamp(
+    1.4rem,
+    1.0073298429319366rem + 1.6753926701570696vw,
+    1.6rem
+  );
   text-align: center;
   width: 100%;
   height: 4vh;
@@ -31,5 +35,25 @@
   .meal-name-area {
     height: 10vh;
     padding: 0 1rem;
+  }
+}
+
+@media only screen and (min-width: 567px) and (max-width: 991px) {
+  .meal-name-area {
+    font-size: clamp(
+      1.6rem,
+      1.2073298429319372rem + 1.6753926701570678vw,
+      1.8rem
+    );
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1600px) {
+  .meal-name-area {
+    font-size: clamp(
+      1.8rem,
+      1.5325471698113209rem + 0.7547169811320753vw,
+      2rem
+    );
   }
 }

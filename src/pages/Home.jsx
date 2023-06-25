@@ -5,13 +5,15 @@ import Nav from '../components/Nav';
 import RandomMeal from '../components/RandomMeal';
 import Search from '../components/Search';
 import './Home.css'
-import { NavContext } from "../context/Context";
+import { NavContext, FilteredAreaContext } from "../context/Context";
 import { useContext, useEffect } from "react";
 
 const Home = () => {
     const {nav, setNav} = useContext(NavContext);
+    const { filteredArea, setFilteredArea } = useContext(FilteredAreaContext);
 
     useEffect(() => {
+      setFilteredArea("American");
         setNav("home")
     },[])
 

@@ -4,9 +4,9 @@
 }
 
 .BackBtn img {
-  width: 5vw;
-  height: 7vh;
-  margin: 3rem;
+  width: 6vw;
+  /* height: 7vh; */
+  margin-left: 2.5rem;
 }
 
 .BackBtn:hover {
@@ -16,23 +16,56 @@
 
 .Btn-Wrapper {
   display: flex;
-  width: 60vw;
-  height: 10vh;
-  justify-content: space-between;
-}
-
-.Btn-Wrapper h2 {
-  font-size: 3rem;
-}
-
-.search-headline {
-  display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
+  width: 100%;
+  height: 10vh;
+  padding-top: 7vh;
+}
+.placeholder {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+.Btn-Wrapper h2 {
+  font-size: clamp(
+    2.4rem,
+    2.0073298429319366rem + 1.6753926701570696vw,
+    2.6rem
+  );
+  flex-basis: 0;
+  flex-grow: 3;
 }
 
 .backArrow {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+@media only screen and (min-width: 567px) and (max-width: 991px) {
+  .Btn-Wrapper h2 {
+    font-size: clamp(
+      2.6rem,
+      2.33364705882353rem + 0.7529411764705871vw,
+      2.8rem
+    );
+  }
+  .BackBtn img {
+    width: 4vw;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1600px) {
+  .Btn-Wrapper h2 {
+    font-size: clamp(
+      2.8rem,
+      -3.2060606060606114rem + 9.696969696969706vw,
+      3rem
+    );
+  }
+  .BackBtn img {
+    width: 3vw;
+  }
+  .search-headline {
+    margin-right: 9rem;
+  }
 }

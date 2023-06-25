@@ -1,5 +1,4 @@
 import "./Nav.css";
-import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Home from "../images/nav-icon/Home.svg";
 import Search from "../images/nav-icon/Search.svg";

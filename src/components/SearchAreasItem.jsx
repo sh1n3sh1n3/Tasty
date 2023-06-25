@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import "./SearchAreasItem.css";
+import { NavLink } from "react-router-dom";
 
 const SearchAreasItem = (props) => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 567)
@@ -18,6 +19,7 @@ const SearchAreasItem = (props) => {
   const longMeal = props.meal.strMeal
 
   return (
+    <NavLink to={`/detail/${props.meal.idMeal}`} >
       <article className="area-meal-item" >
           <div className="areaImageBox">
             <img src={props.meal.strMealThumb} alt={props.meal.strMeal} />
@@ -27,6 +29,7 @@ const SearchAreasItem = (props) => {
         <p className='meal-name-area' style={!isMobile ? { display: 'flex' } : { display: 'none' }}>{longMeal}</p>
     </div>
       </article>
+    </NavLink>
   );
 };
 

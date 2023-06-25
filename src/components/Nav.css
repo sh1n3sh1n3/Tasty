@@ -40,3 +40,17 @@ nav svg:hover {
 nav a {
   padding: 5px;
 }
+
+
+@media only screen and (min-width: 567px) and (max-width: 991px){
+  .navBar{
+    padding: 13px 20px 13px 20px;
+  }
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1600px){
+  .navBar{
+    padding: 13px 20px 13px 20px;
+  }
+}

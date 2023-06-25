@@ -19,12 +19,11 @@ import {
 } from "./context/Context";
 
 function App() {
-
   const [theme, setTheme] = useState(false);
   const [themeDetailPage, setThemeDetailPage] = useState(false);
   const [loading, setLoading] = useState();
   const [categoryFilter, setCategoryFilter] = useState("Beef");
-  const [searchInputCategory, setSearchInputCategory] = useState("")
+  const [searchInputCategory, setSearchInputCategory] = useState("");
   const [filteredArea, setFilteredArea] = useState("American");
   const [searchInputArea, setSearchInputArea] = useState("");
   const [searchInputAllProducts, setsearchInputAllProducts] = useState("");
@@ -47,33 +46,39 @@ function App() {
           <FilteredAreaContext.Provider
             value={{ filteredArea, setFilteredArea }}
           >
-            <SearchTermAreaContext.Provider
-              value={{ searchInputArea, setSearchInputArea }}
-            >
-              <SearchTermAllProductsContext.Provider
-                value={{ searchInputAllProducts, setsearchInputAllProducts }}
+              <SearchTermAreaContext.Provider
+                value={{ searchInputArea, setSearchInputArea }}
               >
-                <SearchbarCategoryContext.Provider
-                  value={{ searchInputCategory, setSearchInputCategory }}
+                <SearchTermAllProductsContext.Provider
+                  value={{ searchInputAllProducts, setsearchInputAllProducts }}
                 >
-                  <CategoryFilterContext.Provider
-                    value={{ categoryFilter, setCategoryFilter }}
+                  <SearchbarCategoryContext.Provider
+                    value={{ searchInputCategory, setSearchInputCategory }}
                   >
-    <BrowserRouter>
-    <Routes>
-                        <Route
-                          path="/"
-                          element={
-                            loading ? <LoadingSection /> : <Onboarding />
-                          }
-                        />
-                        <Route path="/home" element={<Home />} />
-                        <Route path="/search/input" element={<SearchInput />} />
-                        <Route path="/search/areas" element={<SearchAreas />} />
-                        <Route
-                          path="/search/category"
-                          element={<SearchCategory />}
-                        />
+                    <CategoryFilterContext.Provider
+                      value={{ categoryFilter, setCategoryFilter }}
+                    >
+                      <BrowserRouter>
+                        <Routes>
+                          <Route
+                            path="/"
+                            element={
+                              loading ? <LoadingSection /> : <Onboarding />
+                            }
+                          />
+                          <Route path="/home" element={<Home />} />
+                          <Route
+                            path="/search/input"
+                            element={<SearchInput />}
+                          />
+                          <Route
+                            path="/search/areas"
+                            element={<SearchAreas />}
+                          />
+                          <Route
+                            path="/search/category"
+                            element={<SearchCategory />}
+                          />
 
                         <Route path="/detail/:id" element={<Details />} />
     </Routes>
