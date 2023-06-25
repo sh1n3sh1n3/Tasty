@@ -1,115 +1,199 @@
-
-.RandomMealSection{
-    padding: 10px;
-    width: 80%;
-    height: 15%;
-}
-.RandomDishTitle{
-    font-family: 'montserrat';
-    font-size: clamp(2rem, -4.2000000000000055rem + 10.000000000000009vw, 2.2rem);
-    margin-bottom: 2%;
-    color: var(--font-btnBg-color);
-}
-.RandomMealBox{
-    padding: 2%;
-    border-radius: 2vh;
-    margin: 0 auto;
-    background-image: url("../images/CardBck.svg");
-    background-position: no-repeat;
-    background-position: center;
-    overflow: hidden;
-    background-size: cover;
-}
-.RandomDishImg{
-    display: -webkit-box;
-    margin-left: auto;
-    width: 35%;
-    border-radius: 3vh;
-    margin: 3% 3% 5% auto;
-}
-.RandomDishName{
-    font-family: 'montserrat';
-    font-size: clamp(1.8rem, 1.4073298429319372rem + 1.6753926701570678vw, 2rem);
-    margin: -17% 0% 6% 3%;
-    color: var(--white-color);
-    width: 50%;
-}
-.RandomDishCatAr{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items:last baseline; 
-    margin-bottom: 3%;
+.RandomMealSection {
+  padding: 10px;
+  width: 80%;
+  height: 15%;
+  margin-bottom: 2rem;
 }
 
-.RandomDishCatPoint{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    position: sticky;
-    margin-left: 3%;
+.RandomDishTitle {
+  font-family: "montserrat";
+  font-size: clamp(2rem, -4.2000000000000055rem + 10.000000000000009vw, 2.2rem);
+  margin-bottom: 2%;
+  color: var(--font-btnBg-color);
 }
-.RandomDishCat{
-    font-family: 'montserrat';
-    font-size: clamp(1.4rem, 1.0073298429319366rem + 1.6753926701570696vw, 1.6rem);
-    margin-left: 6%;
-    color: rgba(255, 255, 255, 0.555);
+.RandomMealBox {
+  padding: 2%;
+  border-radius: 2vh;
+  margin: 0 auto;
+  background-image: url("../images/CardBck.svg");
+  background-position: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  background-size: cover;
 }
-.RandomDishAr{
-    font-family: 'montserrat';
-    font-size: clamp(1.4rem, 1.0073298429319366rem + 1.6753926701570696vw, 1.6rem);
-    margin-right: 6%;
-    color: rgba(255, 255, 255, 0.555);
-}
-
-@media only screen and (min-width: 567px) and (max-width: 991px){
-    .RandomMealSection{
-        width: 90%;
-    }
-    .RandomDishTitle{
-        font-size: clamp(2.2rem, -3.999999999999992rem + 9.999999999999986vw, 2.4rem);
-    }
-    .RandomDishName{
-        font-size: clamp(2rem, -4.2000000000000055rem + 10.000000000000009vw, 2.2rem);
-        margin: -3% 0 0 3%;
-    }
-    .RandomDishImg{
-        width: 28%;
-    }
-    .RandomDishCat{
-        font-size: clamp(1.6rem, 1.2073298429319372rem + 1.6753926701570678vw, 1.8rem);
-    }
-    .RandomDishCatAr{
-        padding-top: 2%;
-    }
-    .RandomDishCatAr p{
-        font-size: clamp(1.6rem, 1.2073298429319372rem + 1.6753926701570678vw, 1.8rem);
-    }
+.RandomDishImg {
+  display: -webkit-box;
+  margin-left: auto;
+  width: 35%;
+  border-radius: 3vh;
+  margin: 3% 3% 5% auto;
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1600px){
-    .RandomMealSection{
-        width: 90%;
-        padding: 1%;
-    }
-    .RandomDishTitle{
-        font-size: clamp(2.4rem, 2.0073298429319366rem + 1.6753926701570696vw, 2.6rem);
-    }
-    .RandomDishName{
-        font-size: clamp(2.2rem, -3.999999999999992rem + 9.999999999999986vw, 2.4rem);
-        margin: -7% 0% 0% 3%;
-    }
-    .RandomDishImg{
-        width: 28%;
-        padding-top: 1%;
-    }
-    .RandomDishCat{
-        font-size: clamp(1.8rem, 1.5325471698113209rem + 0.7547169811320753vw, 2rem);
-    }
-    .RandomDishCatAr{
-        padding-top: 2%;
-    }
-    .RandomDishCatAr p{
-        font-size: clamp(1.8rem, 1.5325471698113209rem + 0.7547169811320753vw, 2rem);
-    }
+.RandomDishName {
+  font-family: "montserrat";
+  margin: -10% 0% 3% 3%;
+  color: var(--white-color);
+  width: 60%;
+  font-size: clamp(1.8rem, 1.4073298429319372rem + 1.6753926701570678vw, 2rem);
+}
+.RandomDishCatAr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: last baseline;
+  margin-bottom: 3%;
+}
+
+.RandomDishCatPoint {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: sticky;
+  margin-left: 3%;
+}
+
+.RandomDishCat,
+.RandomDishAr {
+  font-family: "montserrat";
+  font-size: clamp(
+    1.4rem,
+    1.0073298429319366rem + 1.6753926701570696vw,
+    1.6rem
+  );
+  margin-left: 6%;
+  color: rgba(255, 255, 255, 0.555);
+}
+.RandomDishAr {
+  text-align: left;
+  margin-right: 6%;
+}
+
+@media only screen and (min-width: 567px) {
+  .RandomMealSection {
+    width: 90%;
+  }
+  /* .RandomDishTitle {
+    font-size: clamp(2rem, 2.5vw, 3rem);
+  } */
+  .RandomDishName {
+    /* font-size: clamp(1.6rem, 2.5vw, 2rem); */
+    margin: -3% 0 0 3%;
+  }
+  .RandomDishImg {
+    width: 28%;
+  }
+  .RandomDishCatAr {
+    padding-top: 2%;
+  }
+  /* .RandomDishCatAr p {
+    font-size: clamp(1.4rem, 2.3vw, 1.8rem);
+  } */
+}
+
+@media only screen and (min-width: 992px) {
+  .RandomMealSection {
+    width: 90%;
+    padding: 1%;
+  }
+  /* .RandomDishTitle {
+    font-size: clamp(2.6rem, 2.5vw, 3.2rem);
+  } */
+  .RandomDishName {
+    /* font-size: clamp(2.5rem, 2.5vw, 3.2rem); */
+    margin: -7% 0% 0% 3%;
+  }
+  .RandomDishImg {
+    width: 23%;
+    padding-top: 1%;
+  }
+  .RandomDishCatAr {
+    padding-top: 2%;
+  }
+  /* .RandomDishCatAr p {
+    font-size: clamp(1.6rem, 2.3vw, 2.4rem);
+  } */
+}
+
+@media only screen and (min-width: 567px) and (max-width: 991px) {
+  .RandomMealSection {
+    width: 90%;
+  }
+  .RandomDishTitle {
+    font-size: clamp(
+      2.2rem,
+      -3.999999999999992rem + 9.999999999999986vw,
+      2.4rem
+    );
+  }
+  .RandomDishName {
+    font-size: clamp(
+      2rem,
+      -4.2000000000000055rem + 10.000000000000009vw,
+      2.2rem
+    );
+    margin: -3% 0 0 3%;
+  }
+  .RandomDishImg {
+    width: 28%;
+  }
+  .RandomDishCat {
+    font-size: clamp(
+      1.6rem,
+      1.2073298429319372rem + 1.6753926701570678vw,
+      1.8rem
+    );
+  }
+  .RandomDishCatAr {
+    padding-top: 2%;
+  }
+  .RandomDishCatAr p {
+    font-size: clamp(
+      1.6rem,
+      1.2073298429319372rem + 1.6753926701570678vw,
+      1.8rem
+    );
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1600px) {
+  .RandomMealSection {
+    width: 90%;
+    padding: 1%;
+  }
+  .RandomDishTitle {
+    font-size: clamp(
+      2.4rem,
+      2.0073298429319366rem + 1.6753926701570696vw,
+      2.6rem
+    );
+  }
+  .RandomDishName {
+    font-size: clamp(
+      2.2rem,
+      -3.999999999999992rem + 9.999999999999986vw,
+      2.4rem
+    );
+    margin: -7% 0% 0% 3%;
+  }
+  .RandomDishImg {
+    width: 28%;
+    padding-top: 1%;
+  }
+  .RandomDishCat {
+    font-size: clamp(
+      1.8rem,
+      1.5325471698113209rem + 0.7547169811320753vw,
+      2rem
+    );
+  }
+  .RandomDishCatAr {
+    padding-top: 2%;
+  }
+  .RandomDishCatAr p {
+    font-size: clamp(
+      1.8rem,
+      1.5325471698113209rem + 0.7547169811320753vw,
+      2rem
+    );
+  }
 }

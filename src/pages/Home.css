@@ -12,18 +12,22 @@
   color: var(--font-color);
 }
 
-/* # ab hier neu + schrift angepasst */
-
-@media only screen and (min-width: 567px) and (max-width: 991px){
-  .area-title{
-    font-size: clamp(2.2rem, -3.999999999999992rem + 9.999999999999986vw, 2.4rem);
-  }
-  
-}
-  
-@media only screen and (min-width: 992px) and (max-width: 1600px){
+@media only screen and (min-width: 567px) and (max-width: 991px) {
   .area-title {
-    font-size: clamp(2.4rem, 2.0073298429319366rem + 1.6753926701570696vw, 2.6rem);
+    font-size: clamp(
+      2.2rem,
+      -3.999999999999992rem + 9.999999999999986vw,
+      2.4rem
+    );
   }
+}
 
+@media only screen and (min-width: 992px) and (max-width: 1600px) {
+  .area-title {
+    font-size: clamp(
+      2.4rem,
+      2.0073298429319366rem + 1.6753926701570696vw,
+      2.6rem
+    );
+  }
 }
