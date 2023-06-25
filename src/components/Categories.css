@@ -9,10 +9,12 @@
   margin-bottom: 2rem;
 }
 
-.search-box a {
+.see-all {
   text-decoration: none;
   color: var(--main-color);
   font-weight: bold;
+  text-align: right;
+  display: block;
   font-size: clamp(
     1.4rem,
     1.0073298429319366rem + 1.6753926701570696vw,

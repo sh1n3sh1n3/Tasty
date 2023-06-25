@@ -15,8 +15,7 @@ import {
   SearchTermAreaContext,
   SearchTermAllProductsContext,
   ThemeContext,
-  ThemeDetailContext,
-  NavBtnColorContext,
+  ThemeDetailContext, NavContext
 } from "./context/Context";
 
 function App() {
@@ -28,7 +27,7 @@ function App() {
   const [filteredArea, setFilteredArea] = useState("American");
   const [searchInputArea, setSearchInputArea] = useState("");
   const [searchInputAllProducts, setsearchInputAllProducts] = useState("");
-  const [btnClicked, setBtnClicked] = useState("home");
+  const [nav, setNav] = useState("home");
 
   useEffect(() => {
     setLoading(true);
@@ -39,14 +38,14 @@ function App() {
 
   return (
     <section className={theme ? "dark" : "light"}>
-      <NavBtnColorContext.Provider value={{ btnClicked, setBtnClicked }}>
-        <ThemeDetailContext.Provider
-          value={{ themeDetailPage, setThemeDetailPage }}
-        >
-          <ThemeContext.Provider value={{ theme, setTheme }}>
-            <FilteredAreaContext.Provider
-              value={{ filteredArea, setFilteredArea }}
-            >
+      <NavContext.Provider value={{nav, setNav}}>
+      <ThemeDetailContext.Provider
+        value={{ themeDetailPage, setThemeDetailPage }}
+      >
+    <ThemeContext.Provider value={{ theme, setTheme }}>
+          <FilteredAreaContext.Provider
+            value={{ filteredArea, setFilteredArea }}
+          >
               <SearchTermAreaContext.Provider
                 value={{ searchInputArea, setSearchInputArea }}
               >
@@ -81,17 +80,17 @@ function App() {
                             element={<SearchCategory />}
                           />
 
-                          <Route path="/detail/:id" element={<Details />} />
-                        </Routes>
-                      </BrowserRouter>
-                    </CategoryFilterContext.Provider>
-                  </SearchbarCategoryContext.Provider>
-                </SearchTermAllProductsContext.Provider>
-              </SearchTermAreaContext.Provider>
-            </FilteredAreaContext.Provider>
-          </ThemeContext.Provider>
-        </ThemeDetailContext.Provider>
-      </NavBtnColorContext.Provider>
+                        <Route path="/detail/:id" element={<Details />} />
+    </Routes>
+    </BrowserRouter>
+    </CategoryFilterContext.Provider>
+    </SearchbarCategoryContext.Provider>
+    </SearchTermAllProductsContext.Provider>
+    </SearchTermAreaContext.Provider>
+    </FilteredAreaContext.Provider>
+    </ThemeContext.Provider>
+      </ThemeDetailContext.Provider>
+      </NavContext.Provider>
     </section>
   );
 }

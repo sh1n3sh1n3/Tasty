@@ -2,52 +2,34 @@ import { useEffect, useState } from "react";
 import "./SearchCategoryItem.css";
 import { NavLink } from "react-router-dom";
 const SearchCategoryItem = (props) => {
-  // const [mealName, setMealName] = useState()
-  // const [screenWidth, setScreenWidth] = useState()
-  // const [mobile, setMobile] = useState(true)
-  // const [desktop, setDesktop] = useState(false)
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 567)
 
-  let shortMeal = props.meal.strMeal;
-  shortMeal = shortMeal.slice(0, 9);
-  shortMeal = `${shortMeal}...`;
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 567)
+    }
+    window.addEventListener('resize', handleResize)
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
 
-  // let longMeal = props.meal.strMeal
-
-  // window.onresize = function () {
-  //     if(window.screen.width < 567){
-  //         // setMealName(shortMeal)
-  //         // setScreenWidth("mobile")
-  //         setMobile(true)
-  //         setDesktop(false)
-  //         // console.log({screenWidth});
-  //         console.log({mobile});
-  //     }
-  //     if(window.screen.width > 567){
-  //         // setMealName(longMeal)
-  //         // setScreenWidth("desktop")
-  //         setDesktop(true)
-  //         setMobile(false)
-  //         // console.log({screenWidth});
-  //         console.log({desktop});
-  //     }
-  //     console.log("resized");
-  // }
-
-  // console.log(window.screen.width);
+  const shortMeal = props.meal.strMeal.slice(0, 9) + '...'
+  const longMeal = props.meal.strMeal
 
   return (
     <NavLink to={`/detail/${props.meal.idMeal}`}>
-      <article className="search-category-item">
-        <div className="categoryImageBox">
-          <img src={props.meal.strMealThumb} alt={props.meal.strMeal} />
-        </div>
-        <p className="meal-name-category">{shortMeal}</p>
-
-        {/* <p style={mobile ? {display: "block"} : {display: "none"}}>{shortMeal}</p>
-            <p style={desktop ? {display: "block"} : {display: "none"}}>{longMeal}</p> */}
-      </article>
+    <article className='search-category-item'>
+      <div className='categoryImageBox'>
+        <img src={props.meal.strMealThumb} alt={props.meal.strMeal} />
+      </div>
+    <div className='meal-name-wrapper'>
+        <p className='meal-name-category' style={isMobile ? { display: 'flex' } : { display: 'none' }}>{shortMeal}</p>
+        <p className='meal-name-category' style={!isMobile ? { display: 'flex' } : { display: 'none' }}>{longMeal}</p>
+    </div>
+    </article>
     </NavLink>
-  );
-};
+  )
+}
 
 export default SearchCategoryItem;

@@ -1,6 +1,11 @@
+/* .area-btn-wrapper {
+  margin: -2.3rem 2% 0 2%;
+} */
+
 .area-btn-wrapper {
   margin: -7% 2%;
 }
+
 .area-btn-container .active {
   background-color: var(--main-color);
   color: var(--white-color);
@@ -27,12 +32,14 @@
 }
 .area-see-all {
   color: var(--main-color);
+  /* margin: 1% 1% 0.5% 1%; */
+  margin: 0 0 2rem 0;
+  text-align: right;
   font-size: clamp(
     1.4rem,
     1.0073298429319366rem + 1.6753926701570696vw,
     1.6rem
   );
-  margin: 1% 1% 0.5% 1%;
 }
 
 .area-btn-container {

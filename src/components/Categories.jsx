@@ -18,7 +18,7 @@ const Categories = () => {
         <section className='categories'>
             <div className='search-box'>
                 <h3>Categories</h3>
-                <Link to='/search/category'>See All</Link>
+                <Link className='see-all' to='/search/category'>See All</Link>
             </div>
             <figure className='categories-wrapper'>
             {categories ? (

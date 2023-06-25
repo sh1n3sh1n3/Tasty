@@ -7,4 +7,4 @@ export const SearchTermAreaContext = createContext();
 export const SearchTermAllProductsContext = createContext();
 export const CategoryFilterContext = createContext();
 export const SearchbarCategoryContext = createContext();
-export const NavBtnColorContext = createContext();
+export const NavContext = createContext();
