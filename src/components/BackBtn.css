@@ -53,6 +53,6 @@
     font-size: clamp(2.8rem, -3.2060606060606114rem + 9.696969696969706vw, 3rem);  
   }
   .BackBtn img {
-    width: 4vw;
+    width: 3vw;
   }
 }
