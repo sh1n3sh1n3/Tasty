@@ -5,13 +5,13 @@ import SearchInputList from "../components/SearchInputList";
 import SearchbarSearchAll from "../components/SearchbarSearchAll";
 import "./SearchInput.css";
 import { useContext, useEffect } from "react";
-import { NavBtnColorContext } from "../context/Context";
+import { NavContext } from "../context/Context";
 
 const SearchInput = () => {
-  const { btnClicked, setBtnClicked } = useContext(NavBtnColorContext);
+  const { nav, setNav } = useContext(NavContext);
 
   useEffect(() => {
-    setBtnClicked("search");
+    setNav("search");
   }, []);
   return (
     <section className="search-input-page">

@@ -5,13 +5,11 @@ import SearchAreasList from "../components/SearchAreasList";
 import SearchbarArea from "../components/SearchbarArea";
 import "./SearchAreas.css";
 import { useContext, useEffect } from "react";
-import { NavBtnColorContext } from "../context/Context";
-
+import { NavContext } from "../context/Context";
 const SearchAreas = () => {
-  const { btnClicked, setBtnClicked } = useContext(NavBtnColorContext);
-
+  const { nav, setNav } = useContext(NavContext);
   useEffect(() => {
-    setBtnClicked("search");
+    setNav("search");
   }, []);
   return (
     <section className="search-areas-page">
