@@ -30,6 +30,7 @@ const Details = () => {
         className="detail-site-container"
         style={{ backgroundImage: `url(${mealData?.strMealThumb})` }}
       >
+        
         <BackBtn />
         <section
           className={

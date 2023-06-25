@@ -44,7 +44,7 @@ const Ingredients = () => {
   }, [ingredientsData]);
 
   return (
-    <>
+    <div className="ingredients-wrapper">
       <h3 className="ingredients">Ingredients</h3>
       <section className="ingredients-container">
         {ingredientsItems.map((elm, index) => (
@@ -53,7 +53,7 @@ const Ingredients = () => {
           </div>
         ))}
       </section>
-    </>
+    </div>
   );
 };
 

@@ -3,17 +3,28 @@
   justify-content: space-between;
   background-color: rgb(212, 212, 212);
   border-radius: 2rem;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
 }
 .ingredient-toggle-btn,
 .instructions-toggle-btn {
   background-color: rgb(212, 212, 212);
   padding: 0.5rem 1rem;
   color: black;
-  border-radius: 1rem;
+  border-radius: 1.6rem;
   border: none;
   transition: all ease-in 250ms;
+  width:50vw;
+  height: 6vh;
+  font-weight: 600;
+  font-size: clamp(1.4rem, 2.3vw, 1.8rem);
 }
 .toggle-container .active {
   background-color: rgb(39, 31, 58);
   color: white;
+}
+
+.ingredient-toggle-btn,
+.instructions-toggle-btn:hover{
+  cursor: pointer;
 }

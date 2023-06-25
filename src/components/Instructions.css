@@ -1,0 +1,27 @@
+.instructions{
+    font-size: clamp(1.5rem, 1.9vw, 2.3rem) ;
+  font-weight: 700;
+  margin: 2rem ;
+}
+
+.InstructionsContainer{
+    font-size: clamp(1.4rem, 1.7vw, 1.9rem);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 2rem;
+    font-weight: 400;
+    margin: 1rem 5rem 2rem 1rem;
+}
+
+.video-btn-wrapper{
+     display: flex;
+    justify-content: center;
+}
+
+.video-btn{
+   background-color: var(--main-color);
+   color: white;
+   width: 80vw;
+   height: 7vh;
+   border-radius: 2rem;
+   font-size: clamp(1.4rem, 1.7vw, 1.9rem);
+}

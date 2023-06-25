@@ -46,3 +46,33 @@
   justify-content: center;
   align-items: center;
 }
+
+.meal-title{
+  font-size: clamp(1.9rem, 2.6vw, 2.5rem);
+  padding:2rem 2rem 1.5rem 2rem;
+}
+
+.meal-category-name{
+  font-size: clamp(1.4rem, 1.7vw, 1.9rem);
+  color:var(--p-tag-searchField-color);
+  padding: 0 2rem 0rem 2rem;
+  font-weight: 600;
+}
+
+.meal-area-name{
+   font-size: clamp(1.4rem, 1.7vw, 1.9rem) ;
+   color:var(--p-tag-searchField-color);
+  padding: 0 2rem 2rem 2rem;
+  font-weight: 500;
+}
+
+ .detail-site-container{
+   height: 100vh;
+  
+} 
+
+
+  .detail-section-dark, .detail-section-light{
+  max-height: 60vh;
+  
+ } 
