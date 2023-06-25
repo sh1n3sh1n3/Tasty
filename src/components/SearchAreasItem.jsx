@@ -3,11 +3,11 @@ import "./SearchAreasItem.css";
 import { NavLink } from "react-router-dom";
 
 const SearchAreasItem = (props) => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 567)
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 786)
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 567)
+      setIsMobile(window.innerWidth < 786)
     }
     window.addEventListener('resize', handleResize)
     return () => {
@@ -19,7 +19,7 @@ const SearchAreasItem = (props) => {
   const longMeal = props.meal.strMeal
 
   return (
-    <NavLink to={`/detail/${props.meal.idMeal}`} >
+    <NavLink className='product-item-link' to={`/detail/${props.meal.idMeal}`} >
       <article className="area-meal-item" >
           <div className="areaImageBox">
             <img src={props.meal.strMealThumb} alt={props.meal.strMeal} />

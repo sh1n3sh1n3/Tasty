@@ -18,6 +18,11 @@
   margin: 7%;
   padding: 1vh;
 }
+
+.product-item-link {
+  color: var(--font-color);
+}
+
 .meal-name-area {
   font-size: clamp(
     1.4rem,

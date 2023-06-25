@@ -4,6 +4,10 @@
   margin: 2rem;
 }
 
+.instructions-wrapper {
+  padding: 0 0 12rem 0;
+}
+
 .InstructionsContainer {
   font-size: clamp(
     1.6rem,
@@ -11,6 +15,7 @@
     1.8rem
   );
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 1.6rem;
   padding: 2rem;
   font-weight: 400;
   margin: 1rem 5rem 2rem 1rem;

@@ -1,17 +1,16 @@
-.category-item-list{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
+.category-item-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 
-
-@media only screen and (min-width: 567px) and (max-width: 991px){
-  .category-item-list{
-    grid-template-columns: repeat(4, 1fr);  
+/* @media only screen and (min-width: 567px) and (max-width: 991px) {
+  .category-item-list {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1600px){
-  .category-item-list{
-    grid-template-columns: repeat(6, 1fr);  
+@media only screen and (min-width: 992px) {
+  .category-item-list {
+    grid-template-columns: repeat(6, 1fr);
   }
-}
+} */

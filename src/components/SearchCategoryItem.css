@@ -19,12 +19,17 @@
   padding: 1vh;
 }
 
+.product-item-link {
+  color: var(--font-color);
+}
+
 .meal-name-category {
   font-size: clamp(
     1.4rem,
     1.0073298429319366rem + 1.6753926701570696vw,
     1.6rem
   );
+
   text-align: center;
   width: 100%;
   height: 4vh;
