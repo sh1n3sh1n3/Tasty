@@ -1,27 +1,65 @@
-.instructions{
-    font-size: clamp(1.5rem, 1.9vw, 2.3rem) ;
+.instructions {
+  font-size: clamp(1.5rem, 1.9vw, 2.3rem);
   font-weight: 700;
-  margin: 2rem ;
+  margin: 2rem;
 }
 
-.InstructionsContainer{
-    font-size: clamp(1.4rem, 1.7vw, 1.9rem);
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    padding: 2rem;
-    font-weight: 400;
-    margin: 1rem 5rem 2rem 1rem;
+.InstructionsContainer {
+  font-size: clamp(
+    1.6rem,
+    1.2073298429319372rem + 1.6753926701570678vw,
+    1.8rem
+  );
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 2rem;
+  font-weight: 400;
+  margin: 1rem 5rem 2rem 1rem;
 }
 
-.video-btn-wrapper{
-     display: flex;
-    justify-content: center;
+.video-btn-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
-.video-btn{
-   background-color: var(--main-color);
-   color: white;
-   width: 80vw;
-   height: 7vh;
-   border-radius: 2rem;
-   font-size: clamp(1.4rem, 1.7vw, 1.9rem);
+.video-btn {
+  background-color: var(--main-color);
+  color: white;
+  width: 80vw;
+  height: 7vh;
+  border-radius: 2rem;
+  font-size: clamp(2rem, -4.2000000000000055rem + 10.000000000000009vw, 2.2rem);
+}
+
+@media only screen and (min-width: 567px) and (max-width: 991px) {
+  .instructions {
+    font-size: clamp(
+      2.2rem,
+      -3.999999999999992rem + 9.999999999999986vw,
+      2.4rem
+    );
+  }
+  .InstructionsContainer {
+    font-size: clamp(
+      1.8rem,
+      1.5325471698113209rem + 0.7547169811320753vw,
+      2rem
+    );
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1600px) {
+  .instructions {
+    font-size: clamp(
+      2.4rem,
+      2.0073298429319366rem + 1.6753926701570696vw,
+      2.6rem
+    );
+  }
+  .InstructionsContainer {
+    font-size: clamp(
+      2rem,
+      -4.2000000000000055rem + 10.000000000000009vw,
+      2.2rem
+    );
+  }
 }
