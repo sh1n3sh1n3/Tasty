@@ -25,6 +25,7 @@ const BackBtn = () => {
       <div className="search-headline">
         <h2>Search</h2>
       </div>
+      <div className="placeholder"/>
     </div>
   );
 };
