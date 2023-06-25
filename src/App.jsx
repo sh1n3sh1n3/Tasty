@@ -16,18 +16,19 @@ import {
   SearchTermAllProductsContext,
   ThemeContext,
   ThemeDetailContext,
+  NavBtnColorContext,
 } from "./context/Context";
 
 function App() {
-
   const [theme, setTheme] = useState(false);
   const [themeDetailPage, setThemeDetailPage] = useState(false);
   const [loading, setLoading] = useState();
   const [categoryFilter, setCategoryFilter] = useState("Beef");
-  const [searchInputCategory, setSearchInputCategory] = useState("")
+  const [searchInputCategory, setSearchInputCategory] = useState("");
   const [filteredArea, setFilteredArea] = useState("American");
   const [searchInputArea, setSearchInputArea] = useState("");
   const [searchInputAllProducts, setsearchInputAllProducts] = useState("");
+  const [btnClicked, setBtnClicked] = useState("home");
 
   useEffect(() => {
     setLoading(true);
@@ -38,51 +39,59 @@ function App() {
 
   return (
     <section className={theme ? "dark" : "light"}>
-      <ThemeDetailContext.Provider
-        value={{ themeDetailPage, setThemeDetailPage }}
-      >
-    <ThemeContext.Provider value={{ theme, setTheme }}>
-          <FilteredAreaContext.Provider
-            value={{ filteredArea, setFilteredArea }}
-          >
-            <SearchTermAreaContext.Provider
-              value={{ searchInputArea, setSearchInputArea }}
+      <NavBtnColorContext.Provider value={{ btnClicked, setBtnClicked }}>
+        <ThemeDetailContext.Provider
+          value={{ themeDetailPage, setThemeDetailPage }}
+        >
+          <ThemeContext.Provider value={{ theme, setTheme }}>
+            <FilteredAreaContext.Provider
+              value={{ filteredArea, setFilteredArea }}
             >
-              <SearchTermAllProductsContext.Provider
-                value={{ searchInputAllProducts, setsearchInputAllProducts }}
+              <SearchTermAreaContext.Provider
+                value={{ searchInputArea, setSearchInputArea }}
               >
-                <SearchbarCategoryContext.Provider
-                  value={{ searchInputCategory, setSearchInputCategory }}
+                <SearchTermAllProductsContext.Provider
+                  value={{ searchInputAllProducts, setsearchInputAllProducts }}
                 >
-                  <CategoryFilterContext.Provider
-                    value={{ categoryFilter, setCategoryFilter }}
+                  <SearchbarCategoryContext.Provider
+                    value={{ searchInputCategory, setSearchInputCategory }}
                   >
-    <BrowserRouter>
-    <Routes>
-                        <Route
-                          path="/"
-                          element={
-                            loading ? <LoadingSection /> : <Onboarding />
-                          }
-                        />
-                        <Route path="/home" element={<Home />} />
-                        <Route path="/search/input" element={<SearchInput />} />
-                        <Route path="/search/areas" element={<SearchAreas />} />
-                        <Route
-                          path="/search/category"
-                          element={<SearchCategory />}
-                        />
+                    <CategoryFilterContext.Provider
+                      value={{ categoryFilter, setCategoryFilter }}
+                    >
+                      <BrowserRouter>
+                        <Routes>
+                          <Route
+                            path="/"
+                            element={
+                              loading ? <LoadingSection /> : <Onboarding />
+                            }
+                          />
+                          <Route path="/home" element={<Home />} />
+                          <Route
+                            path="/search/input"
+                            element={<SearchInput />}
+                          />
+                          <Route
+                            path="/search/areas"
+                            element={<SearchAreas />}
+                          />
+                          <Route
+                            path="/search/category"
+                            element={<SearchCategory />}
+                          />
 
-                        <Route path="/detail/:id" element={<Details />} />
-    </Routes>
-    </BrowserRouter>
-    </CategoryFilterContext.Provider>
-    </SearchbarCategoryContext.Provider>
-    </SearchTermAllProductsContext.Provider>
-    </SearchTermAreaContext.Provider>
-    </FilteredAreaContext.Provider>
-    </ThemeContext.Provider>
-      </ThemeDetailContext.Provider>
+                          <Route path="/detail/:id" element={<Details />} />
+                        </Routes>
+                      </BrowserRouter>
+                    </CategoryFilterContext.Provider>
+                  </SearchbarCategoryContext.Provider>
+                </SearchTermAllProductsContext.Provider>
+              </SearchTermAreaContext.Provider>
+            </FilteredAreaContext.Provider>
+          </ThemeContext.Provider>
+        </ThemeDetailContext.Provider>
+      </NavBtnColorContext.Provider>
     </section>
   );
 }

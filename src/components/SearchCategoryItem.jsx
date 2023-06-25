@@ -1,51 +1,53 @@
-import { useEffect, useState } from 'react'
-import './SearchCategoryItem.css'
-
+import { useEffect, useState } from "react";
+import "./SearchCategoryItem.css";
+import { NavLink } from "react-router-dom";
 const SearchCategoryItem = (props) => {
-    // const [mealName, setMealName] = useState()
-    // const [screenWidth, setScreenWidth] = useState()
-    // const [mobile, setMobile] = useState(true)
-    // const [desktop, setDesktop] = useState(false)
+  // const [mealName, setMealName] = useState()
+  // const [screenWidth, setScreenWidth] = useState()
+  // const [mobile, setMobile] = useState(true)
+  // const [desktop, setDesktop] = useState(false)
 
-let shortMeal = props.meal.strMeal
-shortMeal = shortMeal.slice(0,9)
-shortMeal = `${shortMeal}...`
+  let shortMeal = props.meal.strMeal;
+  shortMeal = shortMeal.slice(0, 9);
+  shortMeal = `${shortMeal}...`;
 
-// let longMeal = props.meal.strMeal
+  // let longMeal = props.meal.strMeal
 
-// window.onresize = function () {
-//     if(window.screen.width < 567){
-//         // setMealName(shortMeal)
-//         // setScreenWidth("mobile")
-//         setMobile(true)
-//         setDesktop(false)
-//         // console.log({screenWidth});
-//         console.log({mobile});
-//     }
-//     if(window.screen.width > 567){
-//         // setMealName(longMeal)
-//         // setScreenWidth("desktop")
-//         setDesktop(true)
-//         setMobile(false)
-//         // console.log({screenWidth});
-//         console.log({desktop});
-//     }
-//     console.log("resized");
-// }
+  // window.onresize = function () {
+  //     if(window.screen.width < 567){
+  //         // setMealName(shortMeal)
+  //         // setScreenWidth("mobile")
+  //         setMobile(true)
+  //         setDesktop(false)
+  //         // console.log({screenWidth});
+  //         console.log({mobile});
+  //     }
+  //     if(window.screen.width > 567){
+  //         // setMealName(longMeal)
+  //         // setScreenWidth("desktop")
+  //         setDesktop(true)
+  //         setMobile(false)
+  //         // console.log({screenWidth});
+  //         console.log({desktop});
+  //     }
+  //     console.log("resized");
+  // }
 
-// console.log(window.screen.width);
+  // console.log(window.screen.width);
 
-    return ( 
-        <article className='search-category-item'>
-            <div className='categoryImageBox'>
-            <img src={props.meal.strMealThumb} alt={props.meal.strMeal} />
-            </div>
-            <p className='meal-name-category'>{shortMeal}</p>
+  return (
+    <NavLink to={`/detail/${props.meal.idMeal}`}>
+      <article className="search-category-item">
+        <div className="categoryImageBox">
+          <img src={props.meal.strMealThumb} alt={props.meal.strMeal} />
+        </div>
+        <p className="meal-name-category">{shortMeal}</p>
 
-            {/* <p style={mobile ? {display: "block"} : {display: "none"}}>{shortMeal}</p>
+        {/* <p style={mobile ? {display: "block"} : {display: "none"}}>{shortMeal}</p>
             <p style={desktop ? {display: "block"} : {display: "none"}}>{longMeal}</p> */}
-        </article>
-     );
-}
+      </article>
+    </NavLink>
+  );
+};
 
 export default SearchCategoryItem;

@@ -1,6 +1,5 @@
 import "./SearchInputItem.css";
-import { useState, useEffect } from "react";
-import arrow from "../images/arrow-right.svg"
+import arrow from "../images/arrow-right.svg";
 import { NavLink } from "react-router-dom";
 
 const SearchInputItem = (props) => {
