@@ -36,7 +36,7 @@
 }
 
 .flying-food {
-  width: 70vw;
+  width: clamp(35rem, 80vw, 52rem);
 }
 
 /* Content Section */
@@ -57,16 +57,17 @@
 }
 
 .content-onboard h1 {
-  font-size: 6vw;
+  font-size: clamp(3rem, 7vw, 5.5rem);
   color: var(--p-tag-searchField-color);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
-.content-onboard p {
+.text-5000 p{
   text-align: center;
-  font-size: 3vw;
-  padding: 0 25vw;
-  margin-bottom: 8vw;
+  line-height: clamp(3rem, 5.5vw, 4.5rem);
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  padding: 0 5vw;
+  margin-bottom: clamp(6rem, 5vw, 6.5rem);
   color: var(--nav-icon-color);
 }
 
@@ -75,8 +76,7 @@
   background-color: var(--font-color);
   padding: 3vw 30vw;
   border-radius: 15px;
-  font-size: 4vw;
-  text-decoration: none;
+  font-size: clamp(1.5rem, 3vw, 3rem);
   -webkit-box-shadow: 0px 10px 13px -7px #000000,
     5px 5px 15px 5px rgba(0, 0, 0, 0);
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
@@ -90,30 +90,27 @@
 /* Media Queries */
 
 @media only screen and (min-width: 540px) {
-  .flying-food {
-    width: 25rem;
-  }
-
-  .content-section-onboard {
-    max-height: 20rem;
-  }
-
-  .content-onboard h1 {
-    font-size: 2rem;
-  }
 
   .text-5000 {
-    padding: 0 1.5vw;
+    padding: 0 13vw;
+  }
+
+  .content-onboard a {
+    padding: 1.5rem 17rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+
+  .text-5000 {
+    padding: 0 25vw;
   }
 
   .content-onboard p {
-    font-size: 1rem;
     margin-bottom: 2rem;
   }
 
   .content-onboard a {
-    padding: 1rem 10rem;
-    border-radius: 15px;
-    font-size: 1.5rem;
+    padding: 1rem 18rem;
   }
 }
