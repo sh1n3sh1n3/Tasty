@@ -13,11 +13,15 @@
   text-decoration: none;
   color: var(--main-color);
   font-weight: bold;
-  font-size: 1.4rem;
+  font-size: clamp(
+    1.4rem,
+    1.0073298429319366rem + 1.6753926701570696vw,
+    1.6rem
+  );
 }
 
 .search-box h3 {
-  font-size: 2.5rem;
+  font-size: clamp(2rem, -4.2000000000000055rem + 10.000000000000009vw, 2.2rem);
   color: var(--font-btnBg-color);
   padding: 0 1rem;
 }
@@ -39,7 +43,11 @@
 
 .categories-wrapper a {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: clamp(
+    1.6rem,
+    1.2073298429319372rem + 1.6753926701570678vw,
+    1.8rem
+  );
   color: var(--font-btnBg-color);
 }
 
@@ -51,7 +59,6 @@
   height: 30vh;
   width: 60vw;
   display: flex;
-
   flex-direction: column;
   padding: 2.5rem;
 }
@@ -109,6 +116,7 @@
   height: 8rem;
   object-fit: contain;
 } */
+
 @media only screen and (min-width: 992px) {
   .categories-wrapper {
     display: grid;
@@ -119,20 +127,19 @@
     width: unset;
     justify-content: space-evenly;
     align-items: center;
-
     height: 40vh;
   }
   .category-card h5 {
-    font-size: clamp(2rem, 2.5vw, 2.5rem);
+    /* font-size: clamp(2rem, 2.5vw, 2.5rem); */
     font-weight: bold;
   }
   .search-box a {
-    font-size: clamp(2rem, 2.5vw, 2.5rem);
+    /* font-size: clamp(2rem, 2.5vw, 2.5rem); */
     padding-right: 3rem;
   }
-  .search-box h3 {
+  /* .search-box h3 {
     font-size: clamp(2.5rem, 2.5vw, 3.2rem);
-  }
+  } */
 }
 @media only screen and (min-width: 768px) {
   .search-box a {
@@ -143,7 +150,57 @@
     justify-content: space-evenly;
   }
   .category-card h5 {
-    font-size: clamp(1.6rem, 2.5vw, 2rem);
+    /* font-size: clamp(1.6rem, 2.5vw, 2rem); */
     font-weight: bold;
+  }
+}
+
+/* # neu ab hier */
+
+@media only screen and (min-width: 567px) and (max-width: 991px) {
+  .search-box h3 {
+    font-size: clamp(
+      2.2rem,
+      -3.999999999999992rem + 9.999999999999986vw,
+      2.4rem
+    );
+  }
+  .categories-wrapper a {
+    font-size: clamp(
+      1.8rem,
+      1.5325471698113209rem + 0.7547169811320753vw,
+      2rem
+    );
+  }
+  .search-box a {
+    font-size: clamp(
+      1.6rem,
+      1.2073298429319372rem + 1.6753926701570678vw,
+      1.8rem
+    );
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1600px) {
+  .search-box h3 {
+    font-size: clamp(
+      2.4rem,
+      2.0073298429319366rem + 1.6753926701570696vw,
+      2.6rem
+    );
+  }
+  .categories-wrapper a {
+    font-size: clamp(
+      2rem,
+      -4.2000000000000055rem + 10.000000000000009vw,
+      2.2rem
+    );
+  }
+  .search-box a {
+    font-size: clamp(
+      1.6rem,
+      1.2073298429319372rem + 1.6753926701570678vw,
+      1.8rem
+    );
   }
 }

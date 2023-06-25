@@ -20,8 +20,8 @@ html {
   --font-color: #0a2533;
   --page-bg-color: #f1f5f5;
   --nav-icon-color: #97a2b0;
-  --p-tag-searchField-color: ##97a2b0;
-  --toggle-bg-color: ##cbd4de;
+  --p-tag-searchField-color: #97a2b0;
+  --toggle-bg-color: #cbd4de;
   --white-color: #ffffff;
   --dark-theme-color: #97a2b0;
 }
@@ -46,4 +46,9 @@ a {
 
 .dark svg:hover {
   fill: #70b9be;
+}
+
+
+h1{
+  font-size: 1.75rem;
 }
