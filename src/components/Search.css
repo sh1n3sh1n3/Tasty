@@ -45,6 +45,11 @@
     width: 95%;
   }
 }
+@media only screen and (min-width: 300px) and (max-width: 567px) {
+  .searchbar-wrapper {
+    margin: 4rem 2rem 0 2rem;
+  }
+}
 
 @media only screen and (min-width: 567px) and (max-width: 991px) {
   .searchbar-input {

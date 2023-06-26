@@ -46,6 +46,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
 /* .recipe-informations-print-off {
   display: none;

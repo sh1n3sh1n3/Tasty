@@ -1,11 +1,13 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { FilteredAreaContext } from "../context/Context";
+import { FilteredAreaContext, ThemeContext } from "../context/Context";
 import "./BackBtn.css";
 import Arrow from "../images/BackBtn/Arrow.svg";
+import ArrowRight from "../images/arrow-right.svg";
 
 const BackBtn = () => {
   const { setFilteredArea } = useContext(FilteredAreaContext);
+  const { theme, setTheme } = useContext(ThemeContext)
 
   // Hook für die navigation wird in navigate gespeichert
   const navigate = useNavigate();
@@ -20,7 +22,8 @@ const BackBtn = () => {
     <div className="Btn-Wrapper">
       <div className="backArrow">
         <button onClick={goOneBack} className="BackBtn">
-          <img src={Arrow} alt="Back" />
+          <img style={ theme ? {display: "none"} : {display: "inline"} } src={Arrow} alt="Back" />
+          <img className="dark-theme-arrow" style={ theme ? {display: "inline"} : {display: "none"} } src={ArrowRight} alt="Back" />
         </button>
       </div>
       <div className="search-headline">

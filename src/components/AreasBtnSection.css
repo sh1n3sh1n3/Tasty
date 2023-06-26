@@ -18,7 +18,11 @@
   );
 }
 
-.area-btn-container button:hover{
+.area-btn-container {
+  cursor: default;
+}
+
+.area-btn-container button:hover {
   background-color: #70b9be9e;
   color: white;
   cursor: pointer;
@@ -27,6 +31,10 @@
   color: var(--main-color);
   font-size: clamp(1.8rem, 1.4073298429319372rem + 1.6753926701570678vw, 2rem);
   margin: 1% 1% 0.5% 1%;
+}
+.area-see-all-box{
+  display: flex;
+  justify-content: right;
 }
 .area-see-all {
   color: var(--main-color);
@@ -39,8 +47,8 @@
   );
 }
 
-.area-see-all:hover{
-  color:black;
+.area-see-all:hover {
+  color: black;
 }
 
 .area-btn-container {
@@ -48,7 +56,7 @@
   gap: 0.8rem;
   overflow-y: hidden;
   overflow-x: scroll;
-  padding: 0 0 3rem 0;
+  padding: 0 0 4vw 0;
   margin-bottom: 10%;
   margin-top: 5%;
   /* -ms-overflow-style: none;
@@ -105,6 +113,7 @@
       2.2rem
     );
     padding: 1.6% 3.5%;
+    margin: 0 0 3rem 0;
   }
   .area-see-all {
     font-size: clamp(

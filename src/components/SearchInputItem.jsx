@@ -26,8 +26,8 @@ const SearchInputItem = (props) => {
         <article className="search-meal-item" value={props.meal.idMeal}>
           <img className="search-meal-img" src={props.meal.strMealThumb} alt={props.meal.strMeal} />
           <div className="search-meal-item-text">
-            <h2 className='meal-name' style={isMobile ? { display: 'block' } : { display: 'none' }}>{longMeal}</h2>
-            <h2 className='meal-name' style={!isMobile ? { display: 'block' } : { display: 'none' }}>{shortMeal}</h2>
+            <h2 className='input-meal-name' style={isMobile ? { display: 'block' } : { display: 'none' }}>{longMeal}</h2>
+            <h2 className='input-meal-name' style={!isMobile ? { display: 'block' } : { display: 'none' }}>{shortMeal}</h2>
             <p className="meal-name">
               <span className="dot">---</span>
               {props.meal.strCategory}

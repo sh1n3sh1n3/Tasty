@@ -39,8 +39,7 @@
   gap: 2rem;
   overflow-y: hidden;
   overflow-x: scroll;
-  padding: 5vw;
-  margin: -5vw;
+  padding: 2vw 2vw 4vw 2vw;
 }
 
 .categories-wrapper a {
@@ -109,6 +108,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
+    overflow-x: hidden;
   }
   .category-card {
     width: unset;
@@ -171,9 +171,9 @@
   }
   .search-box a {
     font-size: clamp(
-      1.6rem,
-      1.2073298429319372rem + 1.6753926701570678vw,
-      1.8rem
+      1.8rem,
+      1.5325471698113209rem + 0.7547169811320753vw,
+      2rem
     );
   }
 }

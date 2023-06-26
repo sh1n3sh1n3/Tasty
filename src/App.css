@@ -24,7 +24,7 @@ html {
   --toggle-bg-color: #cbd4de;
   --white-color: #ffffff;
   --dark-theme-color: #97a2b0;
-  --meal-categorie-color:#CBD4DE;
+  --meal-categorie-color: #cbd4de;
 }
 
 a {
@@ -36,18 +36,45 @@ a {
   color: var(--white-color);
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
-.dark .product-item-link{
+.dark .product-item-link {
   background-color: var(--font-color);
   color: var(--white-color);
 }
-.dark .inactiveBtn{
+.dark .inactiveBtn {
   color: var(--font-color);
 }
-.dark .active-btn{
+.dark .active-btn {
   color: var(--white-color);
 }
-.dark .categories-wrapper a{
+.dark .categories-wrapper a {
   color: var(--font-color);
+}
+.dark a .input-meal-name {
+  color: var(--font-color);
+}
+.dark .search-category-item,
+.dark .area-meal-item {
+  background-color: #0f1a1f;
+}
+.dark .area-title {
+  color: var(--white-color);
+}
+
+.dark .categories-wrapper::-webkit-scrollbar,
+.dark .area-btn-container::-webkit-scrollbar {
+  background-color: var(--font-color);
+}
+.dark .categories-wrapper::-webkit-scrollbar-thumb,
+.dark .area-btn-container::-webkit-scrollbar-thumb {
+  background-color: var(--white-color);
+  border-radius: 2rem;
+}
+.dark .categories-wrapper::-webkit-scrollbar-thumb:hover,
+.dark .area-btn-container::-webkit-scrollbar-thumb:hover {
+  background-color: var(--main-color);
+}
+.dark .category-see-all:hover {
+  color: var(--white-color);
 }
 
 .light {
@@ -63,14 +90,10 @@ a {
   fill: #70b9be;
 }
 
-.dark .area-see-all:hover{
+.dark .area-see-all:hover {
   color: white;
 }
 
-.dark .BackBtn{
-  stroke: var(--white-color);
-}
-
-h1{
+h1 {
   font-size: 1.75rem;
 }
