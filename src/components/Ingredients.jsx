@@ -43,7 +43,7 @@ const Ingredients = () => {
     ).filter((value) => value && value.trim() !== "");
 
     const concatValues = extractValuesMeasurements.map(
-      (elm, index) => elm + extractValuesIngredient[index]
+      (elm, index) => elm + " " + extractValuesIngredient[index]
     );
 
     const filteredArray = concatValues.filter((n) => n);

@@ -45,3 +45,18 @@
     justify-content: flex-end;
   }
 }
+@media only screen and (max-width: 556px) {
+  .mic-btn-container {
+    width: 20%;
+  }
+}
+@media only screen and (min-width: 557px) {
+  .mic-btn-container {
+    width: 8%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .mic-btn-container {
+    width: 5%;
+  }
+}
