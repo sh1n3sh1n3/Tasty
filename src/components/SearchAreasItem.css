@@ -45,18 +45,20 @@
   align-items: center;
 }
 
-/* # NEU */
 @media only screen and (min-width: 200px) and (max-width: 440px) {
   .areaImageBox {
     padding-bottom: 6%;
   }
 }
-/* #  */
 
 @media only screen and (min-width: 567px) {
   .meal-name-area {
-    height: 10vh;
     padding: 0 1rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .meal-name-area {
+    height: 10vh;
   }
 }
 
