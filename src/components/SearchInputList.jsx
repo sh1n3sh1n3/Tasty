@@ -35,7 +35,11 @@ const SearchInputList = () => {
   return (
     <>
       <section className="search-item-list">
-        <SearchInputItem searchByNameData={searchedData} />
+        {searchedData ? (
+          searchedData.map((meal, index) => {return <SearchInputItem meal={meal} key={index} />})
+        ) : (
+          <p>loading data...</p>
+        )}
       </section>
     </>
   );
