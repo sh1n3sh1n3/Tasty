@@ -1,0 +1,56 @@
+.navBar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  border-radius: 40px 40px 0 0;
+  padding: 20px 20px 20px 20px;
+}
+
+nav svg {
+  width: 24px;
+  fill: rgb(156, 156, 156);
+  transition: 0.3s;
+  cursor: pointer;
+}
+nav svg:hover {
+  fill: rgb(65, 65, 65);
+}
+
+.block {
+  width: 30vw;
+  height: 1vh;
+  background-color: #3ca0a771;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.wrapper-nav {
+  height: 95px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 40px 40px 0 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: white;
+}
+
+nav a {
+  padding: 5px;
+}
+
+
+@media only screen and (min-width: 567px) and (max-width: 991px){
+  .navBar{
+    padding: 13px 20px 13px 20px;
+  }
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1600px){
+  .navBar{
+    padding: 13px 20px 13px 20px;
+  }
+}

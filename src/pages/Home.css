@@ -1,3 +1,36 @@
-a {
-  text-decoration: none;
+.home-page {
+  min-height: 100vh;
+  padding: 0 0 12rem 0;
+}
+
+.home-wrapper {
+  margin: 0 2.5vw;
+}
+
+.area-title {
+  font-size: clamp(2rem, -4.2000000000000055rem + 10.000000000000009vw, 2.2rem);
+  color: var(--font-color);
+}
+
+@media only screen and (min-width: 567px) and (max-width: 991px) {
+  .area-title {
+    font-size: clamp(
+      2.2rem,
+      -3.999999999999992rem + 9.999999999999986vw,
+      2.4rem
+    );
+  }
+  .home-page{
+    padding: 0 0 20rem 0;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1600px) {
+  .area-title {
+    font-size: clamp(
+      2.4rem,
+      2.0073298429319366rem + 1.6753926701570696vw,
+      2.6rem
+    );
+  }
 }

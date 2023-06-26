@@ -16,15 +16,15 @@ const Categories = () => {
 
     return ( 
         <section className='categories'>
-            <div>
-                <h4>Categories</h4>
-                <Link to='/search/category'>See All</Link>
+            <div className='search-box'>
+                <h3>Categories</h3>
+                <Link className='see-all' to='/search/category'>See All</Link>
             </div>
             <figure className='categories-wrapper'>
             {categories ? (
                 categories.map((category, index) => {return (
                 <Link key={index} to='/search/category' >
-                    <article onClick={() => setCategoryFilter(category.strCategory)} key={index}>
+                    <article onClick={() => setCategoryFilter(category.strCategory)} key={index} className="category-card">
                     <img src={category.strCategoryThumb} alt={category.strCategory} />
                     <h5>{category.strCategory}</h5>
                     </article>

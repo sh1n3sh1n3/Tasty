@@ -1,12 +1,125 @@
 .area-btn-container .active {
-  background-color: red;
+  background-color: var(--main-color);
+  color: var(--white-color);
 }
+.area-btn-container button {
+  border-radius: 5vh;
+  padding: 3% 6%;
+  border: none;
+  background-color: var(--page-bg-color);
+  color: var(--font-color);
+  font-family: "montserrat";
+  line-height: 23px;
+  letter-spacing: 0.5px;
+  font-size: clamp(
+    1.6rem,
+    1.2073298429319372rem + 1.6753926701570678vw,
+    1.8rem
+  );
+}
+
+.area-btn-container {
+  cursor: default;
+}
+
+.area-btn-container button:hover {
+  background-color: #70b9be9e;
+  color: white;
+  cursor: pointer;
+}
+.area-title {
+  color: var(--main-color);
+  font-size: clamp(1.8rem, 1.4073298429319372rem + 1.6753926701570678vw, 2rem);
+  margin: 1% 1% 0.5% 1%;
+}
+.area-see-all-box{
+  display: flex;
+  justify-content: right;
+}
+.area-see-all {
+  color: var(--main-color);
+  margin: 0 0 2rem 0;
+  text-align: right;
+  font-size: clamp(
+    1.4rem,
+    1.0073298429319366rem + 1.6753926701570696vw,
+    1.6rem
+  );
+}
+
+.area-see-all:hover {
+  color: black;
+}
+
 .area-btn-container {
   display: flex;
-  gap: 1rem;
-  overflow: scroll;
+  gap: 0.8rem;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 0 0 4vw 0;
+  margin-bottom: 10%;
+  margin-top: 5%;
+  /* -ms-overflow-style: none;
+  scrollbar-width: none; */
 }
-.title-wrapper {
-  display: flex;
-  justify-content: space-between;
+
+/* .area-btn-container::-webkit-scrollbar {
+  display: none;
+} */
+
+.area-see-all {
+  text-align: right;
+  margin: 0 0 1rem 0;
+}
+
+.area-title {
+  font-size: 2.5rem;
+  color: var(--font-color);
+}
+
+@media only screen and (min-width: 992px) {
+  .area-btn-container button {
+    font-weight: bold;
+  }
+  .area-btn-container {
+    margin-top: 3rem;
+    padding: 0rem;
+  }
+}
+
+@media only screen and (min-width: 567px) and (max-width: 991px) {
+  .area-btn-container button {
+    font-size: clamp(
+      1.8rem,
+      1.5325471698113209rem + 0.7547169811320753vw,
+      2rem
+    );
+    padding: 2% 4%;
+  }
+  .area-see-all {
+    font-size: clamp(
+      1.6rem,
+      1.2073298429319372rem + 1.6753926701570678vw,
+      1.8rem
+    );
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1600px) {
+  .area-btn-container button {
+    font-size: clamp(
+      2rem,
+      -4.2000000000000055rem + 10.000000000000009vw,
+      2.2rem
+    );
+    padding: 1.6% 3.5%;
+    margin: 0 0 3rem 0;
+  }
+  .area-see-all {
+    font-size: clamp(
+      1.8rem,
+      1.5325471698113209rem + 0.7547169811320753vw,
+      2rem
+    );
+  }
 }

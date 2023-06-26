@@ -1,0 +1,72 @@
+.search-homepage-container {
+  display: flex;
+  justify-content: center;
+}
+
+.searchbar-input {
+  margin-left: 1rem;
+  border: none;
+  font-family: "montserrat";
+  width: 80%;
+  font-size: clamp(
+    1.6rem,
+    1.2073298429319372rem + 1.6753926701570678vw,
+    1.8rem
+  );
+}
+
+.searchbar-wrapper {
+  border-radius: 1rem;
+  min-width: 90vw;
+  min-height: 5vh;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  margin: 4rem 0 2rem 0;
+  /* margin: 4rem 2rem 4rem 2rem; */
+  /* margin: 3.6rem 2rem 1.4rem 2rem; */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.searchbar-wrapper img {
+  padding: 1rem;
+}
+.searchbar-input:focus {
+  outline: none;
+  border: none;
+}
+.searchbar-input textarea:focus {
+  outline: none;
+}
+
+@media only screen and (min-width: 567px) {
+  .searchbar-input {
+    /* font-size: clamp(1.6rem, 2.3vw, 2rem); */
+    width: 95%;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 567px) {
+  .searchbar-wrapper {
+    margin: 4rem 2rem 0 2rem;
+  }
+}
+
+@media only screen and (min-width: 567px) and (max-width: 991px) {
+  .searchbar-input {
+    font-size: clamp(
+      1.8rem,
+      1.5325471698113209rem + 0.7547169811320753vw,
+      2rem
+    );
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1600px) {
+  .searchbar-input {
+    font-size: clamp(
+      2rem,
+      -4.2000000000000055rem + 10.000000000000009vw,
+      2.2rem
+    );
+  }
+}

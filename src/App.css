@@ -1,8 +1,99 @@
 @font-face {
-  font-family: "montserrat";
-  src: url("./fonts/Montserrat-VariableFont_wght.ttf");
+  font-family: "Montserrat";
+  src: url("../src/fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 html {
-  font-family: "montserrat", Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+  font-family: "Montserrat";
+}
+
+:root {
+  --main-color: #70b9be;
+  --font-color: #0a2533;
+  --page-bg-color: #f1f5f5;
+  --nav-icon-color: #97a2b0;
+  --p-tag-searchField-color: #97a2b0;
+  --toggle-bg-color: #cbd4de;
+  --white-color: #ffffff;
+  --dark-theme-color: #97a2b0;
+  --meal-categorie-color: #cbd4de;
+}
+
+a {
+  text-decoration: none;
+}
+
+.dark {
+  background-color: var(--font-color);
+  color: var(--white-color);
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+.dark .product-item-link {
+  background-color: var(--font-color);
+  color: var(--white-color);
+}
+.dark .inactiveBtn {
+  color: var(--font-color);
+}
+.dark .active-btn {
+  color: var(--white-color);
+}
+.dark .categories-wrapper a {
+  color: var(--font-color);
+}
+.dark a .input-meal-name {
+  color: var(--font-color);
+}
+.dark .search-category-item,
+.dark .area-meal-item {
+  background-color: #0f1a1f;
+}
+.dark .area-title {
+  color: var(--white-color);
+}
+
+.dark .categories-wrapper::-webkit-scrollbar,
+.dark .area-btn-container::-webkit-scrollbar {
+  background-color: var(--font-color);
+}
+.dark .categories-wrapper::-webkit-scrollbar-thumb,
+.dark .area-btn-container::-webkit-scrollbar-thumb {
+  background-color: var(--white-color);
+  border-radius: 2rem;
+}
+.dark .categories-wrapper::-webkit-scrollbar-thumb:hover,
+.dark .area-btn-container::-webkit-scrollbar-thumb:hover {
+  background-color: var(--main-color);
+}
+.dark .category-see-all:hover {
+  color: var(--white-color);
+}
+
+.light {
+  color: #0a2533;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+.dark svg {
+  fill: #3ca0a7;
+}
+
+.dark svg:hover {
+  fill: #70b9be;
+}
+
+.dark .area-see-all:hover {
+  color: white;
+}
+
+h1 {
+  font-size: 1.75rem;
 }

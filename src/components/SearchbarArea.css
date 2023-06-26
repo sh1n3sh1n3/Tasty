@@ -1,0 +1,62 @@
+.mic-btn-img-static {
+  width: 120%;
+  object-fit: contain;
+  display: block;
+  margin: 0rem;
+  padding: 1rem;
+}
+
+.mic-btn-img-animated {
+  width: 120%;
+  animation: pulse 2s ease 0s infinite normal forwards;
+}
+@keyframes pulse {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+.mic-btn {
+  background-color: transparent;
+  width: 60%;
+}
+.mic-btn-container {
+  max-width: 20%;
+  display: flex;
+  justify-content: flex-end;
+}
+@media only screen and (min-width: 992px) {
+  .mic-btn-container {
+    max-width: 10%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+@media only screen and (min-width: 775px) {
+  .mic-btn-container {
+    max-width: 15%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+@media only screen and (max-width: 556px) {
+  .mic-btn-container {
+    width: 20%;
+  }
+}
+@media only screen and (min-width: 557px) {
+  .mic-btn-container {
+    width: 8%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .mic-btn-container {
+    width: 5%;
+  }
+}

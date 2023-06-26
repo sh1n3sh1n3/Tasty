@@ -1,3 +1,131 @@
-.active {
-  background-color: aqua;
+.active-btn {
+  background-color: var(--main-color);
+  color: var(--white-color);
+  border-radius: 5vh;
+  padding: 3% 6%;
+  border: none;
+  line-height: 23px;
+  letter-spacing: 0.5px;
+  font-size: clamp(
+    1.6rem,
+    1.2073298429319372rem + 1.6753926701570678vw,
+    1.8rem
+  );
+  font-family: "Montserrat";
+}
+
+.inactiveBtn {
+  background-color: var(--page-bg-color);
+  color: var(--font-btnBg-color);
+  border-radius: 5vh;
+  padding: 3% 6%;
+  border: none;
+  line-height: 23px;
+  letter-spacing: 0.5px;
+  font-size: clamp(
+    1.6rem,
+    1.2073298429319372rem + 1.6753926701570678vw,
+    1.8rem
+  );
+  font-family: "Montserrat";
+}
+
+.inactiveBtn:hover{
+  background-color: #70b9be9e;
+  color: white;
+  cursor: pointer;
+}
+
+.category-btn-wrapper {
+  margin: 4% 0;
+}
+
+.category-btn-sec {
+  display: flex;
+  gap: 0.8rem;
+  overflow: scroll;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.category-btn-sec button {
+  font-family: montserrat;
+}
+.category-btn-sec::-webkit-scrollbar {
+  display: none;
+}
+.category-see-all-box{
+  display: flex;
+  justify-content: right;
+}
+
+.category-see-all {
+  color: var(--main-color);
+  font-size: clamp(
+    1.4rem,
+    1.0073298429319366rem + 1.6753926701570696vw,
+    1.6rem
+  );
+  /* margin: 1% 1% 0.5% 1%; */
+
+
+  margin: 0 0 2rem 0;
+  display: block;
+  text-align: right;
+  font-weight: bold; 
+}
+
+.category-see-all:hover{
+  color: var(--font-color);
+}
+
+.category-see-all:hover{
+  color:black;
+}
+
+@media only screen and (min-width: 567px) and (max-width: 991px) {
+  .active-btn {
+    font-size: clamp(
+      1.8rem,
+      1.5325471698113209rem + 0.7547169811320753vw,
+      2rem
+    );
+    padding: 2% 4%;
+  }
+  .inactiveBtn {
+    font-size: clamp(
+      1.8rem,
+      1.5325471698113209rem + 0.7547169811320753vw,
+      2rem
+    );
+    padding: 2% 4%;
+  }
+  /*   .category-see-all-{
+    font-size: clamp(1.6rem, 1.2073298429319372rem + 1.6753926701570678vw, 1.8rem);
+  } */
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1600px) {
+  .active-btn {
+    font-size: clamp(
+      2rem,
+      -4.2000000000000055rem + 10.000000000000009vw,
+      2.2rem
+    );
+    padding: 1.6% 3.5%;
+  }
+
+  .inactiveBtn {
+    font-size: clamp(
+      2rem,
+      -4.2000000000000055rem + 10.000000000000009vw,
+      2.2rem
+    );
+    padding: 1.6% 3.5%;
+  }
+
+  /*   .category-see-all{
+    font-size: clamp(1.8rem, 1.5325471698113209rem + 0.7547169811320753vw, 2rem);
+  } */
 }

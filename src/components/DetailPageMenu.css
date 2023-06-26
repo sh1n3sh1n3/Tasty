@@ -1,0 +1,28 @@
+.menu-window-container {
+  background-color: white;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 9rem;
+  z-index: 1;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+}
+@media only screen and (min-width: 300px) and (max-width: 567px) {
+  .menu-window-container {
+    width: 15rem;
+    height: 15rem;
+    top: 4rem;
+  }
+}
+@media only screen and (min-width: 567px) {
+  .menu-window-container {
+    width: 25rem;
+    height: 10rem;
+    top: 9rem;
+  }
+}

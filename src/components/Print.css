@@ -1,0 +1,47 @@
+.recipe-informations-print-off {
+  display: none;
+  width: 100%;
+  height: 100vh;
+}
+.recipe-informations-print-on {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 12rem;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+}
+.img-print-file {
+  object-fit: contain;
+
+  width: 30%;
+}
+
+.ingredients-print-data {
+  font-size: 2rem;
+  width: 50vw;
+  padding: 2rem;
+  background-color: white;
+}
+.instruction-print-data {
+  font-size: 24rem;
+  width: 50vw;
+}
+.print-information-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 4rem;
+}
+.print-btn {
+  font-family: montserrat;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
