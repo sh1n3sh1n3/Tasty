@@ -8,7 +8,7 @@ const Instructions = () => {
   const params = useParams();
   const idDish = params.id;
   const { themeDetailPage, setThemeDetailPage } =
-  useContext(ThemeDetailContext);
+    useContext(ThemeDetailContext);
 
   useEffect(() => {
     fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${idDish}`)
@@ -31,11 +31,16 @@ const Instructions = () => {
   const youTubeURL = instructionData?.strYoutube;
 
   return (
-    <section className={
-      themeDetailPage ? "ingredients-wrapper-dark" : "ingredients-wrapper-light"}>
+    <section
+      className={
+        themeDetailPage
+          ? "ingredients-wrapper-dark"
+          : "ingredients-wrapper-light"
+      }
+    >
       <h1 className="instructions">Instructions</h1>
       <section className="InstructionsContainer">{absatz}</section>
-      <Link to={youTubeURL} className="video-btn-wrapper">
+      <Link to={youTubeURL} className="video-btn-wrapper" target="_blank">
         <button className="video-btn">Video</button>
       </Link>
     </section>

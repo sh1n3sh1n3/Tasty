@@ -47,7 +47,7 @@
   justify-content: center;
   align-items: center;
 }
-.recipe-informations-print-off {
+/* .recipe-informations-print-off {
   display: none;
 }
 .recipe-informations-print-on {
@@ -70,7 +70,7 @@
 }
 .ingredients-print-data {
   width: 200%;
-}
+} */
 
 .meal-title {
   font-size: clamp(1.9rem, 2.6vw, 2.5rem);

@@ -5,6 +5,7 @@ import "./BackBtn2.css";
 import Arrow from "../images/BackBtn/Arrow.svg";
 
 const BackBtn2 = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { setFilteredArea } = useContext(FilteredAreaContext);
   // Hook für die navigation wird in navigate gespeichert
   const navigate = useNavigate();
@@ -15,6 +16,14 @@ const BackBtn2 = () => {
     navigate(-1);
   };
 
+  const menuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <div className="Btn2-Wrapper">
       <div className="backArrow2">
@@ -22,7 +31,11 @@ const BackBtn2 = () => {
           <img src={Arrow} alt="Back" />
         </button>
       </div>
-      <div className="placeholder2"/>
+      <div className="placeholder2"></div>
+          <button onClick={menuToggle} className="menu-btn">
+            {isMenuOpen ? "X" : "..."}
+          </button>
+          {isMenuOpen && <DetailPageMenu onCloseMenu={closeMenu} />}
     </div>
   );
 };

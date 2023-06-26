@@ -29,15 +29,6 @@ const Details = () => {
       });
   }, []);
 
-  const { ref, handlePrint } = usePrint();
-  const showRecipeData = () => {
-    setPrintData("recipe-informations-print-on");
-    setTimeout(() => {
-      handlePrint();
-      setPrintData("recipe-informations-print-off");
-    }, 100);
-  };
-
   return (
     <section
       className="detail-site-container"
@@ -64,15 +55,6 @@ const Details = () => {
         <div className="swipe-line-container">
           <div className="swipe-line"></div>
         </div>
-
-        <button
-          onClick={() => {
-            showRecipeData();
-          }}
-          type="button"
-        >
-          Print Recipe
-        </button>
 
         <h1 className="meal-title">{mealData?.strMeal}</h1>
         <h2 className="meal-category-name">{mealData?.strCategory}</h2>

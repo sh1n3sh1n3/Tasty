@@ -3,11 +3,10 @@
   object-fit: contain;
   display: block;
   margin: 0rem;
+  padding: 1rem;
 }
 
 .mic-btn-img-animated {
-  padding: 1rem;
-  transform: scale(1.5);
   width: 120%;
   animation: pulse 2s ease 0s infinite normal forwards;
 }
@@ -44,5 +43,20 @@
     max-width: 15%;
     display: flex;
     justify-content: flex-end;
+  }
+}
+@media only screen and (max-width: 556px) {
+  .mic-btn-container {
+    width: 20%;
+  }
+}
+@media only screen and (min-width: 557px) {
+  .mic-btn-container {
+    width: 8%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .mic-btn-container {
+    width: 5%;
   }
 }
