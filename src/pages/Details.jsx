@@ -1,4 +1,4 @@
-import BackBtn from "../components/BackBtn";
+
 import Ingredients from "../components/Ingredients";
 import Instructions from "../components/Instructions";
 import Nav from "../components/Nav";
@@ -8,6 +8,7 @@ import { useEffect, useState, useContext } from "react";
 import { useParams } from "react-router-dom";
 import { ThemeDetailContext } from "../context/Context";
 import { usePrint } from "react-recipes";
+import BackBtn2 from "../components/BackBtn2";
 
 const Details = () => {
   const [printData, setPrintData] = useState("recipe-informations-print-off");
@@ -54,7 +55,7 @@ const Details = () => {
           </div>
         </div>
       </div>
-      <BackBtn />
+      <BackBtn2 />
       <section
         className={
           themeDetailPage ? "detail-section-dark" : "detail-section-light"
