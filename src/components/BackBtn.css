@@ -8,7 +8,6 @@
 }
 .BackBtn img {
   width: 6vw;
-  /* height: 7vh; */
   margin-left: 2.5rem;
 }
 
@@ -51,11 +50,6 @@
   flex-basis: 0;
   flex-grow: 3;
 }
-/* 
-.backArrow {
-  flex-basis: 0;
-  flex-grow: 1;
-} */
 
 .dark-theme-arrow {
   transform: rotate(180deg) scale(1.5);

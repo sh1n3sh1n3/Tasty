@@ -4,7 +4,7 @@
 }
 
 .searchbar-input {
-  margin-left: 1rem;
+  margin-left: 2rem;
   border: none;
   font-family: "montserrat";
   width: 80%;
@@ -22,15 +22,11 @@
   display: flex;
   align-items: center;
   background-color: white;
-  margin: 4rem 0 2rem 0;
-  /* margin: 4rem 2rem 4rem 2rem; */
-  /* margin: 3.6rem 2rem 1.4rem 2rem; */
+  margin: 4rem 2rem 4rem 2rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-.searchbar-wrapper img {
   padding: 1rem;
 }
+
 .searchbar-input:focus {
   outline: none;
   border: none;
@@ -41,7 +37,6 @@
 
 @media only screen and (min-width: 567px) {
   .searchbar-input {
-    /* font-size: clamp(1.6rem, 2.3vw, 2rem); */
     width: 95%;
   }
 }
