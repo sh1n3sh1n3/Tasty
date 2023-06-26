@@ -39,7 +39,7 @@
   gap: 2rem;
   overflow-y: hidden;
   overflow-x: scroll;
-  padding: 2vw;
+  padding: 2vw 2vw 4vw 2vw;
 }
 
 .categories-wrapper a {
@@ -108,6 +108,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
+    overflow-x: hidden;
   }
   .category-card {
     width: unset;
