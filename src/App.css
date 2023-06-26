@@ -49,6 +49,9 @@ a {
 .dark .categories-wrapper a{
   color: var(--font-color);
 }
+.dark .category-see-all:hover{
+  color: var(--white-color);
+}
 
 .light {
   color: #0a2533;
