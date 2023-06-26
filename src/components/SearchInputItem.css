@@ -1,22 +1,10 @@
-/* List Wrapper */
-
-.search-meal-wrapper {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 3rem;
-  margin: 3rem 0;
-}
-
-.search-meal-wrapper a {
+a {
   color: var(--font-btnBg-color);
 }
 
 /* Card Section */
 
 .search-meal-item {
-  /* width: 85vw; */
   width: clamp(36rem, 85vw, 65rem);
   background-color: var(--white-color);
   display: grid;
