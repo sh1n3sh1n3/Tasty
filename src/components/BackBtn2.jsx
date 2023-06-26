@@ -1,0 +1,30 @@
+import { useContext } from "react";
+import { useNavigate } from "react-router-dom";
+import { FilteredAreaContext } from "../context/Context";
+import "./BackBtn2.css";
+import Arrow from "../images/BackBtn/Arrow.svg";
+
+const BackBtn2 = () => {
+  const { setFilteredArea } = useContext(FilteredAreaContext);
+  // Hook für die navigation wird in navigate gespeichert
+  const navigate = useNavigate();
+  //   Funktion, die bei Onclick ausgelöst wird. Dabei wird der globale Context für Area zurückgesetzt, damit der User nicht die vorherige Area Filter aktiv hat
+  const goOneBack = () => {
+    setFilteredArea("American");
+    // Die Navigation geht immer um ein Schritt zurück
+    navigate(-1);
+  };
+
+  return (
+    <div className="Btn2-Wrapper">
+      <div className="backArrow2">
+        <button onClick={goOneBack} className="BackBtn2">
+          <img src={Arrow} alt="Back" />
+        </button>
+      </div>
+      <div className="placeholder2"/>
+    </div>
+  );
+};
+
+export default BackBtn2;
