@@ -58,20 +58,15 @@
 
 .content-onboard h1 {
   font-size: clamp(3rem, 6vw, 5.5rem);
-  /* color: var(--p-tag-searchField-color); */
-  margin: 3rem 0 1rem 0;
+  margin: 1rem 0 1rem 0;
 }
 
 .text-5000 p {
   text-align: center;
-  line-height: clamp(3rem, 5.5vw, 4.5rem);
-  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: clamp(3rem, 4.5vw, 4.5rem);
   padding: 0 5vw;
   margin-bottom: clamp(2rem, 1vw, 3.5rem);
-  /* font-size: 1.8rem; */
-  /* font-size: clamp(1.8rem, 1.4073298429319372rem + 1.6753926701570678vw, 2rem);  */
-  /* padding: 0 12vw; */
-  /* margin-bottom: 8vw; */
+  font-size: clamp(1.8rem, 1.4073298429319372rem + 1.6753926701570678vw, 2rem);
   color: var(--nav-icon-color);
 }
 
@@ -80,10 +75,11 @@
   background-color: var(--font-color);
   padding: 3vw 30vw;
   border-radius: 15px;
-  font-size: clamp(1.5rem, 3vw, 3rem);
-  /* font-size: 1.6rem; */
-  /*   font-size: clamp(1.6rem, 1.2073298429319372rem + 1.6753926701570678vw, 1.8rem);
- */
+  font-size: clamp(
+    1.6rem,
+    1.2073298429319372rem + 1.6753926701570678vw,
+    1.8rem
+  );
   text-decoration: none;
   -webkit-box-shadow: 0px 10px 13px -7px #000000,
     5px 5px 15px 5px rgba(0, 0, 0, 0);
@@ -118,23 +114,36 @@
   }
 }
 
-/* # Media Queries + Clamps hinzugefügt aber da Boris schon welche hatte und es responsiv war würde ich vielleicht Boris Version lassen*/
-
-/* @media only screen and (min-width: 567px) and (max-width: 991px){
-  .content-onboard p{
-    font-size: clamp(2rem, -4.2000000000000055rem + 10.000000000000009vw, 2.2rem);
+@media only screen and (min-width: 567px) and (max-width: 991px) {
+  .content-onboard p {
+    font-size: clamp(
+      2rem,
+      -4.2000000000000055rem + 10.000000000000009vw,
+      2.2rem
+    );
   }
-  .content-onboard a{
-    font-size: clamp(1.8rem, 1.5325471698113209rem + 0.7547169811320753vw, 2rem);
-  }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1600px){
-  .content-onboard p{
-    font-size: clamp(2.2rem, -3.999999999999992rem + 9.999999999999986vw, 2.4rem);
-  }
-  .content-onboard a{
-    font-size: clamp(2rem, -4.2000000000000055rem + 10.000000000000009vw, 2.2rem);
+  .content-onboard a {
+    font-size: clamp(
+      1.8rem,
+      1.5325471698113209rem + 0.7547169811320753vw,
+      2rem
+    );
   }
 }
- */
+
+@media only screen and (min-width: 992px) and (max-width: 1600px) {
+  .content-onboard p {
+    font-size: clamp(
+      2.2rem,
+      -3.999999999999992rem + 9.999999999999986vw,
+      2.4rem
+    );
+  }
+  .content-onboard a {
+    font-size: clamp(
+      2rem,
+      -4.2000000000000055rem + 10.000000000000009vw,
+      2.2rem
+    );
+  }
+}

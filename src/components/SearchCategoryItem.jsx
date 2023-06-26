@@ -15,7 +15,8 @@ const SearchCategoryItem = (props) => {
   }, [])
 
   const shortMeal = props.meal.strMeal.slice(0, 9) + '...'
-  const longMeal = props.meal.strMeal
+  let longMeal = props.meal.strMeal
+  longMeal = longMeal.length > 40 ? longMeal.slice(0, 40) + '...' : longMeal ;
 
   return (
     <NavLink className='product-item-link' to={`/detail/${props.meal.idMeal}`}>
