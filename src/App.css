@@ -49,6 +49,9 @@ a {
   fill: #70b9be;
 }
 
+.dark .area-see-all:hover{
+  color: white;
+}
 
 h1{
   font-size: 1.75rem;

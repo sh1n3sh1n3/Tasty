@@ -17,6 +17,12 @@
     1.8rem
   );
 }
+
+.area-btn-container button:hover{
+  background-color: #70b9be9e;
+  color: white;
+  cursor: pointer;
+}
 .area-title {
   color: var(--main-color);
   font-size: clamp(1.8rem, 1.4073298429319372rem + 1.6753926701570678vw, 2rem);
@@ -31,6 +37,10 @@
     1.0073298429319366rem + 1.6753926701570696vw,
     1.6rem
   );
+}
+
+.area-see-all:hover{
+  color:black;
 }
 
 .area-btn-container {
