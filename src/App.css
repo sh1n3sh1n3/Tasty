@@ -73,6 +73,9 @@ a {
 .dark .area-btn-container::-webkit-scrollbar-thumb:hover {
   background-color: var(--main-color);
 }
+.dark .category-see-all:hover {
+  color: var(--white-color);
+}
 
 .light {
   color: #0a2533;

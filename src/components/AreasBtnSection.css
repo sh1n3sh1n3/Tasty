@@ -32,6 +32,10 @@
   font-size: clamp(1.8rem, 1.4073298429319372rem + 1.6753926701570678vw, 2rem);
   margin: 1% 1% 0.5% 1%;
 }
+.area-see-all-box{
+  display: flex;
+  justify-content: right;
+}
 .area-see-all {
   color: var(--main-color);
   margin: 0 0 2rem 0;

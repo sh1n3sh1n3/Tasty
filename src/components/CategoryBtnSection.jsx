@@ -16,7 +16,9 @@ const CategoryBtnSection = () => {
 
     return ( 
         <section className='category-btn-wrapper'>
-        <Link className='category-see-all' to='/search/category'>See All</Link>
+            <article className='category-see-all-box'>
+            <Link className='category-see-all' to='/search/category'>See All</Link>
+            </article>
         <section className='category-btn-sec'>
             {categories ? (
                 categories.map((category, index) => {return <button className={categoryFilter == category.strCategory ? "active-btn" : "inactiveBtn"}  onClick={() => setCategoryFilter(category.strCategory)} key={index}>{category.strCategory}</button>})

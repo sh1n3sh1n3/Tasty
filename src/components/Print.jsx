@@ -32,7 +32,9 @@ const Print = ({ onClick }) => {
     setPrintData("recipe-informations-print-on");
 
     setTimeout(() => {
+      document.body.style.overflow = "hidden";
       handlePrint();
+      document.body.style.overflow = "";
       setPrintData("recipe-informations-print-off");
       onClick();
     }, 100);

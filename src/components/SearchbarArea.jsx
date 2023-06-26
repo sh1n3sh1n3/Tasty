@@ -44,7 +44,7 @@ const SearchbarArea = () => {
   }, [value]);
 
   const onListen = () => {
-    listen({ lang: "de-DE", continuous: true });
+    listen({ lang: "en-EN", continuous: true });
     setPlaceholderTxt("I'm listening...");
     setMicBtnImg(MicOn);
     setMicImgAnim("mic-btn-img-animated");

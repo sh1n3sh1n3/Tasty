@@ -1,9 +1,10 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FilteredAreaContext, ThemeContext } from "../context/Context";
 import "./BackBtn2.css";
 import Arrow from "../images/BackBtn/Arrow.svg";
 import ArrowRight from "../images/arrow-right.svg";
+import DetailPageMenu from "./DetailPageMenu";
 
 const BackBtn2 = () => {
   const { theme, setTheme } = useContext(ThemeContext)
@@ -35,10 +36,11 @@ const BackBtn2 = () => {
         </button>
       </div>
       <div className="placeholder2"></div>
-          <button onClick={menuToggle} className="menu-btn">
-            {isMenuOpen ? "X" : "..."}
-          </button>
-          {isMenuOpen && <DetailPageMenu onCloseMenu={closeMenu} />}
+      <button onClick={menuToggle} className="menu-btn">
+        {isMenuOpen ? "X" : "..."}
+      </button>
+
+      {isMenuOpen && <DetailPageMenu onCloseMenu={closeMenu} />}
     </div>
   );
 };
