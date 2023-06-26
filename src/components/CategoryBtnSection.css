@@ -39,6 +39,7 @@
 .category-btn-wrapper {
   margin: 4% 0;
 }
+
 .category-btn-sec {
   display: flex;
   gap: 0.8rem;
@@ -69,6 +70,10 @@
 
 .category-see-all:hover{
   color: var(--font-color);
+}
+
+.category-see-all:hover{
+  color:black;
 }
 
 @media only screen and (min-width: 567px) and (max-width: 991px) {
