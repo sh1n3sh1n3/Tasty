@@ -3,11 +3,10 @@
   object-fit: contain;
   display: block;
   margin: 0rem;
+  padding: 1rem;
 }
 
 .mic-btn-img-animated {
-  padding: 1rem;
-  transform: scale(1.5);
   width: 120%;
   animation: pulse 2s ease 0s infinite normal forwards;
 }

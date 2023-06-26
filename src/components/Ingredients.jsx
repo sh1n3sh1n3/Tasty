@@ -35,8 +35,12 @@ const Ingredients = () => {
         return Object.assign(obj, { [key]: ingredientsData[key] });
       }, {});
 
-    const extractValuesIngredient = Object.values(filteredIngredients);
-    const extractValuesMeasurements = Object.values(filteredMeasurements);
+    const extractValuesIngredient = Object.values(filteredIngredients).filter(
+      (value) => value && value.trim() !== ""
+    );
+    const extractValuesMeasurements = Object.values(
+      filteredMeasurements
+    ).filter((value) => value && value.trim() !== "");
 
     const concatValues = extractValuesMeasurements.map(
       (elm, index) => elm + extractValuesIngredient[index]
@@ -47,8 +51,13 @@ const Ingredients = () => {
   }, [ingredientsData]);
 
   return (
-    <div className={
-      themeDetailPage ? "ingredients-wrapper-dark" : "ingredients-wrapper-light"}>
+    <div
+      className={
+        themeDetailPage
+          ? "ingredients-wrapper-dark"
+          : "ingredients-wrapper-light"
+      }
+    >
       <h3 className="ingredients">Ingredients</h3>
       <section className="ingredients-container">
         {ingredientsItems.map((elm, index) => (
