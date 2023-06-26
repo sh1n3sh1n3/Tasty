@@ -25,7 +25,7 @@
   5px 5px 15px 5px rgba(0, 0, 0, 0);
   box-shadow: 0px 10px 13px -7px var(--nav-icon-color),
   5px 5px 15px 5px rgba(114, 114, 114, 0);
-  transform: scale(1.02);
+  transform: scale(1.01);
   cursor: pointer;
 }
 /* # */
