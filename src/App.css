@@ -67,6 +67,10 @@ a {
   color: white;
 }
 
+.dark .BackBtn{
+  stroke: var(--white-color);
+}
+
 h1{
   font-size: 1.75rem;
 }
