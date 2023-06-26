@@ -2,7 +2,6 @@ import { useContext, useEffect, useRef, useState } from "react";
 import { SearchTermAllProductsContext } from "../context/Context";
 import "./Search.css";
 import Search from "../images/nav-icon/Search.svg";
-
 import Mic from "../images/nav-icon/mic.svg";
 import MicOn from "../images/nav-icon/mic-on.svg";
 import { useSpeechRecognition } from "react-recipes";

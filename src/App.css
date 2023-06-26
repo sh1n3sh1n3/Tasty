@@ -53,7 +53,9 @@ a {
   color: var(--font-color);
 }
 .dark .search-category-item,
-.dark .area-meal-item {
+.dark .area-meal-item,
+.dark .InstructionsContainer,
+.dark .toggle-container .active {
   background-color: #0f1a1f;
 }
 .dark .area-title {

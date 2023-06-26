@@ -1,3 +1,4 @@
 .search-input-page {
+  min-height: 100vh;
   padding: 0 0 12rem 0;
 }

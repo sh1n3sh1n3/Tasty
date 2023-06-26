@@ -1,13 +1,11 @@
 .mic-btn-img-static {
-  width: 120%;
+  width: 3rem;
   object-fit: contain;
   display: block;
-  margin: 0rem;
-  padding: 1rem;
 }
 
 .mic-btn-img-animated {
-  width: 120%;
+  width: 3rem;
   animation: pulse 2s ease 0s infinite normal forwards;
 }
 @keyframes pulse {
