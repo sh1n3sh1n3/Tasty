@@ -24,7 +24,7 @@ html {
   --toggle-bg-color: #cbd4de;
   --white-color: #ffffff;
   --dark-theme-color: #97a2b0;
-  --meal-categorie-color:#CBD4DE;
+  --meal-categorie-color: #cbd4de;
 }
 
 a {
@@ -36,17 +36,20 @@ a {
   color: var(--white-color);
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
-.dark .product-item-link{
+.dark .product-item-link {
   background-color: var(--font-color);
   color: var(--white-color);
 }
-.dark .inactiveBtn{
+.dark .inactiveBtn {
   color: var(--font-color);
 }
-.dark .active-btn{
+.dark .active-btn {
   color: var(--white-color);
 }
-.dark .categories-wrapper a{
+.dark .categories-wrapper a {
+  color: var(--font-color);
+}
+.dark a .input-meal-name {
   color: var(--font-color);
 }
 
@@ -63,10 +66,10 @@ a {
   fill: #70b9be;
 }
 
-.dark .area-see-all:hover{
+.dark .area-see-all:hover {
   color: white;
 }
 
-h1{
+h1 {
   font-size: 1.75rem;
 }

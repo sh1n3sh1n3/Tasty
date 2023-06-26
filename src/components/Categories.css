@@ -39,8 +39,7 @@
   gap: 2rem;
   overflow-y: hidden;
   overflow-x: scroll;
-  padding: 5vw;
-  margin: -5vw;
+  padding: 2vw;
 }
 
 .categories-wrapper a {
@@ -171,9 +170,9 @@
   }
   .search-box a {
     font-size: clamp(
-      1.6rem,
-      1.2073298429319372rem + 1.6753926701570678vw,
-      1.8rem
+      1.8rem,
+      1.5325471698113209rem + 0.7547169811320753vw,
+      2rem
     );
   }
 }
