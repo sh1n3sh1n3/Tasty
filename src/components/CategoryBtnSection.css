@@ -26,9 +26,17 @@
     1.8rem
   );
 }
+
+.inactiveBtn:hover{
+  background-color: #70b9be9e;
+  color: white;
+  cursor: pointer;
+}
+
 .category-btn-wrapper {
   margin: 4% 0;
 }
+
 .category-btn-sec {
   display: flex;
   gap: 0.8rem;
@@ -53,6 +61,10 @@
   display: block;
   text-align: right;
   font-weight: bold;
+}
+
+.category-see-all:hover{
+  color:black;
 }
 
 @media only screen and (min-width: 567px) and (max-width: 991px) {
