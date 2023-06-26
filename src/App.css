@@ -56,6 +56,9 @@ a {
 .dark .area-meal-item {
   background-color: #0f1a1f;
 }
+.dark .area-title {
+  color: var(--white-color);
+}
 
 .dark .categories-wrapper::-webkit-scrollbar,
 .dark .area-btn-container::-webkit-scrollbar {
