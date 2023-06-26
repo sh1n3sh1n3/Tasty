@@ -119,14 +119,8 @@
   .category-card h5 {
     font-weight: bold;
   }
-  .search-box a {
-    padding-right: 3rem;
-  }
 }
 @media only screen and (min-width: 768px) {
-  .search-box a {
-    padding-right: 1.5rem;
-  }
   .category-card {
     height: 50vh;
     justify-content: space-evenly;
