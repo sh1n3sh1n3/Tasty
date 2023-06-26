@@ -1,7 +1,7 @@
 .mic-btn-img-static {
   width: 3rem;
   object-fit: contain;
-  display: block;
+  /* display: block; */
 }
 
 .mic-btn-img-animated {
