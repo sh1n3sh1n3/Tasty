@@ -1,12 +1,12 @@
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { FilteredAreaContext } from "../context/Context";
-import "./BackBtn.css";
+import "./BackBtn2.css";
 import Arrow from "../images/BackBtn/Arrow.svg";
 
-const BackBtn = () => {
+const BackBtn2 = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { setFilteredArea } = useContext(FilteredAreaContext);
-
   // Hook für die navigation wird in navigate gespeichert
   const navigate = useNavigate();
   //   Funktion, die bei Onclick ausgelöst wird. Dabei wird der globale Context für Area zurückgesetzt, damit der User nicht die vorherige Area Filter aktiv hat
@@ -16,19 +16,28 @@ const BackBtn = () => {
     navigate(-1);
   };
 
+  const menuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
-    <div className="Btn-Wrapper">
-      <div className="backArrow">
-        <button onClick={goOneBack} className="BackBtn">
+    <div className="Btn2-Wrapper">
+      <div className="backArrow2">
+        <button onClick={goOneBack} className="BackBtn2">
           <img src={Arrow} alt="Back" />
         </button>
       </div>
-      <div className="search-headline">
-        <h2>Search</h2>
-      </div>
-      <div className="placeholder"></div>
+      <div className="placeholder2"></div>
+          <button onClick={menuToggle} className="menu-btn">
+            {isMenuOpen ? "X" : "..."}
+          </button>
+          {isMenuOpen && <DetailPageMenu onCloseMenu={closeMenu} />}
     </div>
   );
 };
 
-export default BackBtn;
+export default BackBtn2;

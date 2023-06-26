@@ -1,4 +1,4 @@
-import BackBtn from "../components/BackBtn";
+
 import Ingredients from "../components/Ingredients";
 import Instructions from "../components/Instructions";
 import Nav from "../components/Nav";
@@ -8,6 +8,7 @@ import { useEffect, useState, useContext } from "react";
 import { useParams } from "react-router-dom";
 import { ThemeDetailContext } from "../context/Context";
 import { usePrint } from "react-recipes";
+import BackBtn2 from "../components/BackBtn2";
 
 const Details = () => {
   const [printData, setPrintData] = useState("recipe-informations-print-off");
@@ -33,7 +34,19 @@ const Details = () => {
       className="detail-site-container"
       style={{ backgroundImage: `url(${mealData?.strMealThumb})` }}
     >
-      <BackBtn />
+      <div ref={ref} className={printData} style={{ height: "75vh" }}>
+        <img className="img-print-file" src={mealData?.strMealThumb} alt="" />
+        <h1 className="meal-title">{mealData?.strMeal}</h1>
+        <div className="print-information-container">
+          <div className="instruction-print-data">
+            <Instructions />
+          </div>
+          <div className="ingredients-print-data">
+            <Ingredients />
+          </div>
+        </div>
+      </div>
+      <BackBtn2 />
       <section
         className={
           themeDetailPage ? "detail-section-dark" : "detail-section-light"
