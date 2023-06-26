@@ -27,7 +27,9 @@ const AreasBtnSection = (props) => {
   return (
     <>
       <section className="area-btn-wrapper">
+        <article className="area-see-all-box">
           <h2 className="area-see-all">See All</h2>
+        </article>
         <section className="area-btn-container">
           {areaNamesAll?.map((item, index) => (
             <button
