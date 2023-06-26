@@ -40,6 +40,10 @@
 .category-btn-sec::-webkit-scrollbar {
   display: none;
 }
+.category-see-all-box{
+  display: flex;
+  justify-content: right;
+}
 
 .category-see-all {
   color: var(--main-color);
