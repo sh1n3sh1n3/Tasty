@@ -33,9 +33,23 @@ a {
 
 .dark {
   background-color: var(--font-color);
-  color: #ffffff;
+  color: var(--white-color);
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
+.dark .product-item-link{
+  background-color: var(--font-color);
+  color: var(--white-color);
+}
+.dark .inactiveBtn{
+  color: var(--font-color);
+}
+.dark .active-btn{
+  color: var(--white-color);
+}
+.dark .categories-wrapper a{
+  color: var(--font-color);
+}
+
 .light {
   color: #0a2533;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
