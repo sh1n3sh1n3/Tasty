@@ -20,6 +20,9 @@
       2.4rem
     );
   }
+  .home-page{
+    padding: 0 0 20rem 0;
+  }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1600px) {

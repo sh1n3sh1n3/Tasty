@@ -35,6 +35,12 @@
   font-size: clamp(2rem, -4.2000000000000055rem + 10.000000000000009vw, 2.2rem);
 }
 
+.video-btn:hover{
+  background-color: #70b9be9e;
+  cursor: pointer;
+
+}
+
 @media only screen and (min-width: 567px) and (max-width: 991px) {
   .instructions {
     font-size: clamp(
