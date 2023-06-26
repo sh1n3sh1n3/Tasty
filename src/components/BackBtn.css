@@ -57,6 +57,10 @@
   flex-grow: 1;
 } */
 
+.dark-theme-arrow {
+  transform: rotate(180deg) scale(1.5);
+}
+
 @media only screen and (min-width: 567px) and (max-width: 991px) {
   .Btn-Wrapper h2 {
     font-size: clamp(
