@@ -1,8 +1,9 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FilteredAreaContext } from "../context/Context";
 import "./BackBtn2.css";
 import Arrow from "../images/BackBtn/Arrow.svg";
+import DetailPageMenu from "./DetailPageMenu";
 
 const BackBtn2 = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,10 +33,11 @@ const BackBtn2 = () => {
         </button>
       </div>
       <div className="placeholder2"></div>
-          <button onClick={menuToggle} className="menu-btn">
-            {isMenuOpen ? "X" : "..."}
-          </button>
-          {isMenuOpen && <DetailPageMenu onCloseMenu={closeMenu} />}
+      <button onClick={menuToggle} className="menu-btn">
+        {isMenuOpen ? "X" : "..."}
+      </button>
+
+      {isMenuOpen && <DetailPageMenu onCloseMenu={closeMenu} />}
     </div>
   );
 };

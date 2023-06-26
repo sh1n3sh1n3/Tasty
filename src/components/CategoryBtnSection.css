@@ -37,6 +37,10 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+.category-btn-sec button {
+  font-family: montserrat;
+}
 .category-btn-sec::-webkit-scrollbar {
   display: none;
 }
