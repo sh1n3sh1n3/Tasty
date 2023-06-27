@@ -30,6 +30,9 @@
   flex-basis: 0;
   flex-grow: 1;
 }
+.menu-btn:hover {
+  cursor: pointer;
+}
 
 @media only screen and (min-width: 567px) and (max-width: 991px) {
   .BackBtn2 img {

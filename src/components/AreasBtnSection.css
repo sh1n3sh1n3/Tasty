@@ -49,6 +49,7 @@
 
 .area-see-all:hover {
   color: black;
+  cursor: pointer;
 }
 
 .area-btn-container {
