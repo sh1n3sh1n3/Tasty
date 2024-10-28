@@ -81,16 +81,6 @@ We welcome contributions to the Tasty App project! If you'd like to contribute, 
 4. Push your changes to your fork: `git push origin feature-name`
 5. Create a pull request explaining your changes.
 
-## Authors
-
-Special thanks to the following contributors for their hard work on this project:
-
-- [jenny-dreamatrix](https://github.com/jenny-dreamatrix) - Frontend Developer & Git Master
-- [Lis-art](https://github.com/Lis-art) - Trellomaster & Frontend Developer
-- [SarahBehrendt](https://github.com/SarahBehrendt) - CSS Master & Frontend Developer
-- [BorisD2023](https://github.com/BorisD2023) - CSS Master & Frontend Developer
-- [AlpayC](https://github.com/AlpayC) - Frontend Developer & Feature Developer
-
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
